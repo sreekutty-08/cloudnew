@@ -1,181 +1,154 @@
 import React from 'react';
-import { Clock, Users, Lightbulb, DollarSign, Target, Phone } from 'lucide-react';
+import { Globe, Phone, Zap, Shield, Users, Award } from 'lucide-react';
 
-const HeroSection = () => {
+const CloudQlobeGlobal = () => {
+  // Updated flag URLs for requested countries (latest flags)
+  const topFlags = [
+    { name: 'USA', flagUrl: 'https://flagcdn.com/w160/us.png', color: 'from-red-500 to-blue-600' },
+    { name: 'United Kingdom', flagUrl: 'https://flagcdn.com/w160/gb.png', color: 'from-red-600 to-blue-700' },
+    { name: 'China', flagUrl: 'https://flagcdn.com/w160/cn.png', color: 'from-red-500 to-yellow-500' },
+    { name: 'France', flagUrl: 'https://flagcdn.com/w160/fr.png', color: 'from-blue-600 to-red-500' },
+    { name: 'Germany', flagUrl: 'https://flagcdn.com/w160/de.png', color: 'from-black to-red-500' },
+  ];
+
+  const bottomFlags = [
+    { name: 'Australia', flagUrl: 'https://flagcdn.com/w160/au.png', color: 'from-blue-600 to-red-600' },
+    { name: 'Spain', flagUrl: 'https://flagcdn.com/w160/es.png', color: 'from-red-600 to-yellow-500' },
+    { name: 'Canada', flagUrl: 'https://flagcdn.com/w160/ca.png', color: 'from-red-500 to-white' },
+    { name: 'Italy', flagUrl: 'https://flagcdn.com/w160/it.png', color: 'from-green-600 to-red-500' },
+    { name: 'Japan', flagUrl: 'https://flagcdn.com/w160/jp.png', color: 'from-white to-red-500' },
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white flex items-center py-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center max-w-7xl mx-auto px-4">
-        
-        {/* Left Side: Content */}
-        <div className='mt-[-150px]'>
-          <h1 className="text-4xl font-default text-black mb-6 ml-[-40px]">
-            Explore with <span className='text-blue-500'>Cloud Qlobe</span>
+    <div className="h-[680px] bg-white relative overflow-hidden">
+      {/* Subtle Background Elements */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
+      </div>
+
+      {/* Additional subtle background icons */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        {/* Light colored background icons */}
+        <Globe className="absolute top-10 right-16 text-blue-100 w-20 h-20 opacity-20" />
+        <Phone className="absolute top-28 left-12 text-cyan-100 w-16 h-16 opacity-15" />
+        <Zap className="absolute bottom-32 right-24 text-yellow-100 w-24 h-24 opacity-10" />
+        <Shield className="absolute bottom-10 left-24 text-green-100 w-20 h-20 opacity-15" />
+        <Users className="absolute top-48 right-40 text-purple-100 w-24 h-24 opacity-10" />
+        <Award className="absolute bottom-40 left-40 text-orange-100 w-20 h-20 opacity-15" />
+      </div>
+
+      <div className="flex h-full relative z-10">
+        {/* Left Side - Content */}
+        <div className="lg:w-1/2 flex flex-col justify-center z-10 ml-[60px]">
+          <h1 className="text-4xl lg:text-5xl font-Default text-gray-800 mb-6 leading-snug">
+            The mastery of <span className="text-blue-500">Telecom</span>
           </h1>
-          
-          <p className="text-gray-700 text-[15px] leading-relaxed text-justify mb-8 ml-[-40px] max-w-[520px]">
-            Cloudqlobe enables businesses to connect worldwide using reliable VoIP platforms
-            and secure SIP routing. With intelligent telecom solutions, we ensure consistent
-            call quality, data efficiency, and scalable infrastructure across all regions.
+          <p className="text-gray-700 text-base leading-relaxed mb-8 max-w-[520px]">
+            Cloudqlobe enables businesses to connect worldwide using reliable VoIP
+            platforms and secure SIP routing. With intelligent telecom solutions,
+            we ensure consistent call quality, data efficiency, and scalable
+            infrastructure across all regions.
           </p>
-          
-          <div className="flex space-x-4 ml-[-40px]">
-            <button className="bg-blue-500 text-white px-6 py-2 hover:bg-blue-600 transition">
+          <div className="flex gap-4">
+            <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Get Started
             </button>
-            <button className="border border-orange-500 text-orange-500 px-6 py-2 hover:bg-orange-50 transition">
+            <button className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-all duration-300 hover:border-gray-400">
               Learn More
             </button>
           </div>
         </div>
 
-        {/* Right Side: Infographic Tree */}
-        <div className="relative h-[600px] w-full flex items-center justify-center">
-          {/* Tree Trunk */}
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-32 bg-gradient-to-b from-amber-800 to-amber-900 rounded-b-lg"></div>
-          
-          {/* Main Tree Structure */}
-          <svg viewBox="0 0 500 500" className="w-full h-full">
-            {/* Tree branches */}
-            <path d="M250 450 L200 350 L150 250" stroke="#8B4513" strokeWidth="6" fill="none" />
-            <path d="M250 450 L300 350 L350 250" stroke="#8B4513" strokeWidth="6" fill="none" />
-            <path d="M250 450 L220 320 L180 200" stroke="#8B4513" strokeWidth="4" fill="none" />
-            <path d="M250 450 L280 320 L320 200" stroke="#8B4513" strokeWidth="4" fill="none" />
-            <path d="M250 450 L250 300 L250 150" stroke="#8B4513" strokeWidth="8" fill="none" />
-          </svg>
+        {/* Right Side - Global Map with Real Flags */}
+        <div className="flex-1 relative flex flex-col items-center justify-center p-4">
+          <div className="relative w-full max-w-xl h-full flex flex-col items-center justify-center">
 
-          {/* Orange Section - Analytics & Time */}
-          <div className="absolute top-16 left-8">
-            <div className="relative">
-              {/* Large circle */}
-              <div className="w-24 h-24 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
-                <Clock className="w-8 h-8 text-white" />
-              </div>
-              {/* Small circles */}
-              <div className="absolute -top-2 -right-2 w-6 h-6 bg-orange-300 rounded-full"></div>
-              <div className="absolute -bottom-3 -left-3 w-8 h-8 bg-orange-500 rounded-full"></div>
-              <div className="absolute top-8 -left-8 w-4 h-4 bg-orange-200 rounded-full"></div>
-              <div className="absolute -top-6 left-12 w-5 h-5 bg-orange-400 rounded-full"></div>
+            {/* Top Row Flags (moved up a bit) with increased spacing */}
+            <div className="flex space-x-12 z-10 mb-16 -mt-8 ml-[-100px]">
+              {topFlags.map((country, index) => (
+                <div key={`top-${index}`} className="relative group cursor-pointer">
+                  <div className="w-20 h-20 overflow-hidden border-3 border-white shadow-2xl hover:scale-110 transition-all duration-300 hover:shadow-blue-500/25 bg-white">
+                    {/* Square corners */}
+                    <img
+                      src={country.flagUrl}
+                      alt={`${country.name} flag`}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.parentNode.innerHTML = `<div class="w-full h-full bg-gradient-to-br ${country.color} flex items-center justify-center text-white font-bold text-sm">${country.name.slice(0, 3).toUpperCase()}</div>`;
+                      }}
+                    />
+                  </div>
+                  <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-lg">
+                    {country.name}
+                    <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 rotate-45"></div>
+                  </div>
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white animate-pulse shadow-lg">
+                    <div className="absolute inset-0 bg-green-400 rounded-full animate-ping"></div>
+                  </div>
+                  <div className="absolute inset-0 border border-blue-400/40 rounded-lg animate-pulse opacity-60"></div>
+                </div>
+              ))}
             </div>
-            {/* Info box */}
-            <div className="absolute -left-16 top-28 bg-white p-3 rounded-lg shadow-lg max-w-32">
-              <h4 className="font-bold text-xs text-gray-800 mb-1">REAL-TIME</h4>
-              <p className="text-xs text-gray-600">24/7 monitoring and instant call routing optimization</p>
+
+            {/* Bottom Row Flags with increased spacing */}
+            <div className="flex space-x-12 z-10 ml-[-100px]">
+              {bottomFlags.map((country, index) => (
+                <div key={`bottom-${index}`} className="relative group cursor-pointer">
+                  <div className="w-[80px] h-[80px] overflow-hidden border-3 border-white shadow-2xl hover:scale-110 transition-all duration-300 hover:shadow-blue-500/25 bg-white">
+                    {/* Square corners */}
+                    <img
+                      src={country.flagUrl}
+                      alt={`${country.name} flag`}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.parentNode.innerHTML = `<div class="w-full h-full bg-gradient-to-br ${country.color} flex items-center justify-center text-white font-bold text-sm">${country.name.slice(0, 3).toUpperCase()}</div>`;
+                      }}
+                    />
+                  </div>
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-900 text-white text-xs px-3 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap shadow-lg">
+                    {country.name}
+                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-900 rotate-45"></div>
+                  </div>
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white animate-pulse shadow-lg">
+                    <div className="absolute inset-0 bg-green-400 rounded-full animate-ping"></div>
+                  </div>
+                  <div className="absolute inset-0 border border-blue-400/40 rounded-lg animate-pulse opacity-60"></div>
+                </div>
+              ))}
             </div>
+
+            {/* Floating Data Points */}
+            <div className="absolute top-10 right-10 w-3 h-3 bg-blue-500 rounded-full opacity-60 animate-bounce"></div>
+            <div className="absolute bottom-20 left-10 w-2 h-2 bg-cyan-500 rounded-full opacity-40 animate-bounce" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-blue-400 rounded-full opacity-50 animate-bounce" style={{ animationDelay: '2s' }}></div>
           </div>
+        </div>
+      </div>
 
-          {/* Blue Section - Strategy & Chess */}
-          <div className="absolute top-8 right-8">
-            <div className="relative">
-              {/* Large circle */}
-              <div className="w-28 h-28 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
-                <Target className="w-10 h-10 text-white" />
-              </div>
-              {/* Small circles */}
-              <div className="absolute -top-3 -right-3 w-8 h-8 bg-blue-300 rounded-full"></div>
-              <div className="absolute -bottom-2 -left-4 w-6 h-6 bg-blue-500 rounded-full"></div>
-              <div className="absolute top-6 -right-10 w-5 h-5 bg-blue-200 rounded-full"></div>
-              <div className="absolute -top-8 left-16 w-4 h-4 bg-blue-400 rounded-full"></div>
-              <div className="absolute bottom-12 -right-6 w-3 h-3 bg-blue-300 rounded-full"></div>
-            </div>
-            {/* Info box */}
-            <div className="absolute -right-20 top-32 bg-white p-3 rounded-lg shadow-lg max-w-36">
-              <h4 className="font-bold text-xs text-gray-800 mb-1">STRATEGY</h4>
-              <p className="text-xs text-gray-600">Intelligent routing strategies for optimal performance</p>
-            </div>
+      {/* Stats Footer */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-white border border-gray-200 rounded-2xl px-8 py-4 shadow-xl">
+        <div className="flex items-center space-x-8 text-gray-700">
+          <div className="text-center">
+            <div className="text-2xl font-bold text-blue-600">150+</div>
+            <div className="text-xs text-gray-500">Countries</div>
           </div>
-
-          {/* Teal Section - Innovation */}
-          <div className="absolute top-32 left-2">
-            <div className="relative">
-              {/* Large circle */}
-              <div className="w-20 h-20 bg-gradient-to-br from-teal-400 to-teal-600 rounded-full flex items-center justify-center shadow-lg">
-                <Lightbulb className="w-7 h-7 text-white" />
-              </div>
-              {/* Small circles */}
-              <div className="absolute -top-2 -right-2 w-5 h-5 bg-teal-300 rounded-full"></div>
-              <div className="absolute -bottom-3 -left-2 w-7 h-7 bg-teal-500 rounded-full"></div>
-              <div className="absolute top-4 -left-6 w-3 h-3 bg-teal-200 rounded-full"></div>
-              <div className="absolute -top-4 left-8 w-4 h-4 bg-teal-400 rounded-full"></div>
-            </div>
-            {/* Info box */}
-            <div className="absolute -left-20 top-24 bg-white p-3 rounded-lg shadow-lg max-w-32">
-              <h4 className="font-bold text-xs text-gray-800 mb-1">INNOVATION</h4>
-              <p className="text-xs text-gray-600">Cutting-edge VoIP technology and AI-driven solutions</p>
-            </div>
+          <div className="w-px h-8 bg-gray-200"></div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-cyan-600">99.9%</div>
+            <div className="text-xs text-gray-500">Uptime</div>
           </div>
-
-          {/* Red Section - Finance */}
-          <div className="absolute bottom-24 left-12">
-            <div className="relative">
-              {/* Large circle */}
-              <div className="w-22 h-22 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center shadow-lg">
-                <DollarSign className="w-8 h-8 text-white" />
-              </div>
-              {/* Small circles */}
-              <div className="absolute -top-2 -right-3 w-6 h-6 bg-red-400 rounded-full"></div>
-              <div className="absolute -bottom-2 -left-3 w-8 h-8 bg-red-600 rounded-full"></div>
-              <div className="absolute top-2 -left-8 w-4 h-4 bg-red-300 rounded-full"></div>
-              <div className="absolute -top-6 left-10 w-5 h-5 bg-red-500 rounded-full"></div>
-            </div>
-            {/* Info box */}
-            <div className="absolute -left-24 -top-4 bg-white p-3 rounded-lg shadow-lg max-w-36">
-              <h4 className="font-bold text-xs text-gray-800 mb-1">COST-EFFECTIVE</h4>
-              <p className="text-xs text-gray-600">Competitive rates with transparent pricing models</p>
-            </div>
+          <div className="w-px h-8 bg-gray-200"></div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-green-600">24/7</div>
+            <div className="text-xs text-gray-500">Support</div>
           </div>
-
-          {/* Green Section - Teams */}
-          <div className="absolute bottom-20 right-16">
-            <div className="relative">
-              {/* Large circle */}
-              <div className="w-24 h-24 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg">
-                <Users className="w-8 h-8 text-white" />
-              </div>
-              {/* Small circles */}
-              <div className="absolute -top-3 -right-2 w-7 h-7 bg-green-300 rounded-full"></div>
-              <div className="absolute -bottom-1 -left-4 w-5 h-5 bg-green-500 rounded-full"></div>
-              <div className="absolute top-8 -right-8 w-4 h-4 bg-green-200 rounded-full"></div>
-              <div className="absolute -top-6 left-12 w-6 h-6 bg-green-400 rounded-full"></div>
-              <div className="absolute bottom-6 -right-6 w-3 h-3 bg-green-300 rounded-full"></div>
-            </div>
-            {/* Info box */}
-            <div className="absolute -right-20 -top-8 bg-white p-3 rounded-lg shadow-lg max-w-36">
-              <h4 className="font-bold text-xs text-gray-800 mb-1">COLLABORATION</h4>
-              <p className="text-xs text-gray-600">Seamless team connectivity across global networks</p>
-            </div>
-          </div>
-
-          {/* Purple Section - Target */}
-          <div className="absolute bottom-8 right-4">
-            <div className="relative">
-              {/* Large circle */}
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center shadow-lg">
-                <Phone className="w-7 h-7 text-white" />
-              </div>
-              {/* Small circles */}
-              <div className="absolute -top-2 -right-2 w-5 h-5 bg-purple-400 rounded-full"></div>
-              <div className="absolute -bottom-3 -left-2 w-6 h-6 bg-purple-600 rounded-full"></div>
-              <div className="absolute top-4 -left-6 w-3 h-3 bg-purple-300 rounded-full"></div>
-              <div className="absolute -top-4 left-8 w-4 h-4 bg-purple-500 rounded-full"></div>
-            </div>
-            {/* Info box */}
-            <div className="absolute -right-24 -top-12 bg-white p-3 rounded-lg shadow-lg max-w-36">
-              <h4 className="font-bold text-xs text-gray-800 mb-1">CONNECTIVITY</h4>
-              <p className="text-xs text-gray-600">Reliable global VoIP infrastructure for seamless communication</p>
-            </div>
-          </div>
-
-          {/* Decorative floating circles */}
-          <div className="absolute top-20 left-20 w-2 h-2 bg-orange-300 rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-12 w-3 h-3 bg-blue-300 rounded-full animate-pulse delay-300"></div>
-          <div className="absolute bottom-40 left-24 w-2 h-2 bg-green-300 rounded-full animate-pulse delay-700"></div>
-          <div className="absolute bottom-32 right-20 w-2 h-2 bg-purple-300 rounded-full animate-pulse delay-500"></div>
-          <div className="absolute top-60 left-32 w-1 h-1 bg-teal-300 rounded-full animate-pulse delay-1000"></div>
-          <div className="absolute bottom-60 right-32 w-1 h-1 bg-red-300 rounded-full animate-pulse delay-200"></div>
         </div>
       </div>
     </div>
   );
 };
 
-export default HeroSection;
+export default CloudQlobeGlobal;

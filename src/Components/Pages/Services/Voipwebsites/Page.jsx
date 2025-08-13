@@ -4,6 +4,7 @@ import Voipcontent1 from '../../../Voipcontent1'
 import Voipanimation from '../../../Voipanimation'
 import Voipcontent2 from '../../../Voipcontent2'
 import HomeAchievement from '../../../Homeacheivemnet'
+import Becomepartner from '../../../Becomepartner'; 
 import Register from '../../../Register'
 import Footer from '../../../Footer'
 
@@ -11,6 +12,7 @@ const Page = () => {
   return (
     <div>
       <Voipwebsitesheader/>
+      <Becomepartner/>
       <Voipcontent1/>
       <Voipanimation/>
       <Voipcontent2/>

@@ -1,124 +1,228 @@
 import React from "react";
-import { GiCombinationLock } from "react-icons/gi";
-import { MdOutlineSecurity } from "react-icons/md";
-import { SiSecurityscorecard } from "react-icons/si";
-import { SiHiveBlockchain } from "react-icons/si";
-import { MdVpnLock } from "react-icons/md";
 import {
-  Lock,
-  Home,
-  User,
-  Settings,
-  Info,
   Shield,
-  Key,
-  FileCheck
+  Smartphone,
+  Wifi,
+  Cloud,
+  CreditCard,
+  MapPin,
+  Mail,
+  UserPlus,
+  CheckCircle,
+  Layers,
+  Globe,
+  Lock,
+  Server,
 } from "lucide-react";
 
-const SecurityPanelLayout = () => {
+const AnimatedHeader = () => {
+  const flags = [
+    "https://flagcdn.com/w40/us.png",
+    "https://flagcdn.com/w40/gb.png",
+    "https://flagcdn.com/w40/ca.png",
+    "https://flagcdn.com/w40/au.png",
+    "https://flagcdn.com/w40/de.png",
+    "https://flagcdn.com/w40/fr.png",
+  ];
+
+  // Background icons array
+  const bgIcons = [
+    <Globe className="w-12 h-12 text-orange-300/20" />,
+    <Lock className="w-10 h-10 text-blue-300/20" />,
+    <Server className="w-14 h-14 text-purple-300/20" />,
+    <Smartphone className="w-12 h-12 text-green-300/20" />,
+    <Cloud className="w-14 h-14 text-pink-300/20" />,
+    <Wifi className="w-10 h-10 text-teal-300/20" />,
+    <CreditCard className="w-12 h-12 text-gray-300/20" />,
+  ];
+
   return (
-    <div className="flex h-[500px] bg-white rounded-2xl overflow-hidden shadow-2xl">
-      {/* Left Panel */}
-      <div className="w-1/2 bg-white p-8 flex flex-col">
-        {/* Icon Row */}
-        <div className="flex justify-around mb-6 mt-[80px]">
-          {[
-            { icon: MdOutlineSecurity , gradient: "from-blue-400 to-blue-600" },
-            { icon: SiSecurityscorecard , gradient: "from-purple-400 to-purple-600" },
-            { icon: SiHiveBlockchain , gradient: "from-green-400 to-green-600" },
-            { icon: MdVpnLock , gradient: "from-orange-400 to-orange-600" }
-          ].map(({ icon: Icon, gradient }, idx) => (
-            <div key={idx} className="group cursor-pointer">
-              <div
-                className={`bg-gradient-to-br ${gradient} flex items-center justify-center w-20 h-20 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105`}
-              >
-                <Icon size={35} className="text-white" />
+    <div className="relative h-[580px] bg-white overflow-hidden">
+
+      {/* Background scattered icons */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {bgIcons.map((icon, idx) => (
+          <div
+            key={idx}
+            className="absolute"
+            style={{
+              top: `${Math.random() * 90}%`,
+              left: `${Math.random() * 90}%`,
+              transform: `rotate(${Math.random() * 360}deg)`,
+            }}
+          >
+            {icon}
+          </div>
+        ))}
+      </div>
+
+      <div className="container mx-auto px-6 py-12 relative z-10">
+        {/* Two-column layout */}
+        <div className="flex flex-col md:flex-row items-center justify-between min-h-[70vh] gap-12 ml-[80px]">
+          {/* Left Content */}
+          <div
+            className="flex-1 space-y-8 animate-fade-up"
+            style={{ animationDelay: "0.3s" }}
+          >
+            <div className="space-y-4">
+              <h1 className="text-4xl md:text-5xl font-default text-orange-600">
+                Next-Gen <span className="text-blue-600">Registration</span> 
+              </h1>
+              <p className="text-xl text-gray-600 max-w-lg">
+                Experience the future of secure account creation with our
+                advanced platform
+              </p>
+
+              {/* Flags row */}
+              <div className="flex items-center gap-4 mt-6">
+                {flags.map((src, idx) => (
+                  <div
+                    key={idx}
+                    className="p-[3px] border border-white/30 rounded-lg bg-white/10 backdrop-blur-sm shadow-sm hover:scale-110 transition-transform duration-300"
+                  >
+                    <img
+                      src={src}
+                      alt="country flag"
+                      className="w-10 h-6 object-cover rounded"
+                    />
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
 
-        {/* Lock & Login Buttons */}
-        <div className="flex justify-center gap-2 -mt-[-50px] ml-[-40px]">
-          {/* Lock Tab */}
-          <div>
-            <button className="flex items-center justify-center gap-3 text-gray-500 px-10 py-3">
-              <GiCombinationLock size={60} />
-            </button>
+            {/* Button */}
+           <button className="group relative px-6 py-2 border border-gray-500 text-gray-500 rounded-lg hover:bg-orange-50 transition font-medium shadow-sm">
+  <span className="relative z-10 flex items-center justify-center gap-2">
+    Register Here
+  </span>
+</button>
+
+
           </div>
 
-          {/* Login Button */}
-          <div className="mt-[20px] ml-[-20px]">
-            <button className="flex items-center justify-center gap-3 border border-orange-500 text-orange-500 px-24 py-3 rounded-lg hover:bg-orange-50 transition font-medium shadow-sm">
-              Login
-            </button>
+          {/* Right Animation */}
+          <div className="flex-1 flex justify-center relative">
+            <div className="relative w-96 h-96">
+              {/* Central Hub */}
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div className="w-24 h-24 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-2xl animate-pulse-glow">
+                  <Shield className="w-12 h-12 text-white" />
+                </div>
+              </div>
+
+              {/* Outer Ring */}
+              <div className="absolute inset-0 animate-orbit-slow">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-xl">
+                    <Cloud className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
+                  <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center shadow-xl">
+                    <Wifi className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+                  <div className="w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl flex items-center justify-center shadow-xl">
+                    <Smartphone className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+                <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center shadow-xl">
+                    <CreditCard className="w-8 h-8 text-white" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Inner Ring */}
+              <div className="absolute inset-16 animate-orbit-reverse">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="w-12 h-12 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-xl flex items-center justify-center shadow-lg">
+                    <Mail className="w-6 h-6 text-white" />
+                  </div>
+                </div>
+                <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2">
+                  <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-rose-400 rounded-xl flex items-center justify-center shadow-lg">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
+                </div>
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
+                  <div className="w-12 h-12 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-xl flex items-center justify-center shadow-lg">
+                    <CheckCircle className="w-6 h-6 text-white" />
+                  </div>
+                </div>
+                <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2">
+                  <div className="w-12 h-12 bg-gradient-to-r from-violet-400 to-purple-400 rounded-xl flex items-center justify-center shadow-lg">
+                    <Layers className="w-6 h-6 text-white" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Orbit Lines */}
+              <div className="absolute inset-8 border border-gray-300 rounded-full animate-pulse"></div>
+              <div
+                className="absolute inset-12 border border-gray-200 rounded-full animate-pulse"
+                style={{ animationDelay: "1s" }}
+              ></div>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Right Panel */}
-      <div className="w-1/2 bg-white flex items-center justify-center relative overflow-hidden">
-        {/* Background Pattern */}
-       <div className="absolute inset-0">
-  <div className="absolute top-10 left-10 w-20 h-20 border-4 border-orange-500 border-opacity-10 rounded-lg transform rotate-12"></div>
-  <div className="absolute top-32 right-20 w-16 h-16 border-4 border-red-500 border-opacity-10 rounded-full"></div>
-  <div className="absolute bottom-20 left-20 w-12 h-12 border-4 border-yellow-500 border-opacity-10 rounded-lg transform -rotate-45"></div>
-  <div className="absolute bottom-40 right-10 w-14 h-14 border-4 border-teal-500 border-opacity-10 rounded-full"></div>
-</div>
-
-
-        {/* Animated Circles */}
-        <div
-          className="absolute w-80 h-80 rounded-full border border-gray-200 animate-spin"
-          style={{ animationDuration: "20s" }}
-        ></div>
-        <div
-          className="absolute w-60 h-60 rounded-full border border-blue-200 animate-spin"
-          style={{ animationDuration: "15s", animationDirection: "reverse" }}
-        ></div>
-        <div className="absolute w-40 h-40 rounded-full bg-gray-100 animate-pulse"></div>
-
-        {/* Central Security Elements */}
-        <div className="relative z-10 text-center">
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-3xl shadow-2xl mb-6 animate-pulse border border-orange-200">
-            <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-4 rounded-2xl inline-block shadow-lg">
-              <Lock size={60} className="text-white" />
-            </div>
-          </div>
-
-          {/* Security Icons Row */}
-          <div className="flex justify-center space-x-6 mb-6">
-            {/* Orange */}
-            <div
-              className="bg-gradient-to-br from-orange-50 to-orange-100 p-3 rounded-xl animate-bounce shadow-lg border border-orange-200"
-              style={{ animationDelay: "0s" }}
-            >
-              <Shield size={24} className="text-orange-600" />
-            </div>
-            {/* Green */}
-            <div
-              className="bg-gradient-to-br from-green-50 to-green-100 p-3 rounded-xl animate-bounce shadow-lg border border-green-200"
-              style={{ animationDelay: "0.2s" }}
-            >
-              <Key size={24} className="text-green-600" />
-            </div>
-            {/* Blue */}
-            <div
-              className="bg-gradient-to-br from-blue-50 to-blue-100 p-3 rounded-xl animate-bounce shadow-lg border border-blue-200"
-              style={{ animationDelay: "0.4s" }}
-            >
-              <FileCheck size={24} className="text-blue-600" />
-            </div>
-          </div>
-        </div>
-
-        {/* Floating Security Indicators */}
-        <div className="absolute top-20 right-20 bg-green-500 w-4 h-4 rounded-full animate-ping"></div>
-        <div className="absolute bottom-32 left-16 bg-green-400 w-3 h-3 rounded-full animate-pulse"></div>
-        <div className="absolute top-1/2 right-12 bg-blue-400 w-2 h-2 rounded-full animate-bounce"></div>
-      </div>
+      {/* Animations */}
+      <style jsx>{`
+        @keyframes orbit-slow {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        @keyframes orbit-reverse {
+          from {
+            transform: rotate(360deg);
+          }
+          to {
+            transform: rotate(0deg);
+          }
+        }
+        @keyframes pulse-glow {
+          0%,
+          100% {
+            transform: scale(1);
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+          }
+          50% {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(6, 182, 212, 0.6);
+          }
+        }
+        @keyframes fade-up {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .animate-orbit-slow {
+          animation: orbit-slow 15s linear infinite;
+        }
+        .animate-orbit-reverse {
+          animation: orbit-reverse 12s linear infinite;
+        }
+        .animate-pulse-glow {
+          animation: pulse-glow 3s ease-in-out infinite;
+        }
+        .animate-fade-up {
+          animation: fade-up 1s ease-out both;
+        }
+      `}</style>
     </div>
   );
 };
 
-export default SecurityPanelLayout;
+export default AnimatedHeader;

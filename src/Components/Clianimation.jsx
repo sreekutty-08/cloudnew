@@ -4,6 +4,14 @@ import {
   PhoneForwarded,
   Globe2,
   Settings,
+  PhoneCall,
+  Network,
+  PhoneIncoming,
+  Shuffle,
+  Cloud,
+  Shield,
+  Zap,
+  Users,
 } from 'lucide-react';
 
 const Ccanimation = () => {
@@ -15,25 +23,37 @@ const Ccanimation = () => {
   });
 
   const tabs = [
-    { id: 'tab1', label: 'CLI Routes' },
-    { id: 'tab2', label: 'NCLI Routes' },
-    { id: 'tab3', label: 'TDM Routes' },
-    { id: 'tab4', label: 'Hybrid Routes' },
+    {
+      id: 'tab1',
+      label: 'CLI Routes',
+      icon: <PhoneCall className="w-6 h-6 text-orange-400" />,
+      desc: 'Crystal-clear premium voice routing.',
+    },
+    {
+      id: 'tab2',
+      label: 'NCLI Routes',
+      icon: <Network className="w-6 h-6 text-orange-400" />,
+      desc: 'Cost-effective large-scale routing.',
+    },
+    {
+      id: 'tab3',
+      label: 'TDM Routes',
+      icon: <PhoneIncoming className="w-6 h-6 text-orange-400" />,
+      desc: 'Reliable traditional voice routing.',
+    },
+    {
+      id: 'tab4',
+      label: 'Hybrid Routes',
+      icon: <Shuffle className="w-6 h-6 text-orange-400" />,
+      desc: 'Best of CLI & NCLI in one solution.',
+    },
   ];
 
-  const renderTabContent = () => {
-    switch (activeTab) {
-      case 'tab1':
-        return 'Get premium CLI Routes with crystal-clear voice quality across global destinations.';
-      case 'tab2':
-        return 'Explore cost-effective NCLI Routes for large-scale wholesale traffic.';
-      case 'tab3':
-        return 'Experience reliable, traditional TDM voice routing with global interconnects.';
-      case 'tab4':
-        return 'Combine the best of CLI and NCLI with our hybrid route optimization.';
-      default:
-        return '';
-    }
+  const tabDetails = {
+    tab1: 'Get premium CLI Routes with crystal-clear voice quality across global destinations.',
+    tab2: 'Explore cost-effective NCLI Routes for large-scale wholesale traffic.',
+    tab3: 'Experience reliable, traditional TDM voice routing with global interconnects.',
+    tab4: 'Combine the best of CLI and NCLI with our hybrid route optimization.',
   };
 
   const handleChange = (e) => {
@@ -42,48 +62,51 @@ const Ccanimation = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Registered:', formData);
     alert('Registration submitted!');
     setFormData({ name: '', email: '', company: '' });
   };
 
   return (
-    <section className="bg-[#0a2463] text-[#0a2463] px-6 py-20">
+    <section className="bg-[#0a2463] px-6 py-8 text-white">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
-        {/* Left Section */}
-        <div className="space-y-6">
-          <h1 className="text-4xl font-bold leading-tight">
-            Optimize Your <span className="text-white">CC Routes</span> with Smart Switching
-          </h1>
-          <p className="text-[#0a2463]/90 max-w-md">
-            Discover high-quality voice routing solutions tailored to your business needs. Choose from CLI, NCLI, TDM, or Hybrid routes to ensure maximum uptime and call clarity.
-          </p>
+        
+        {/* Left Section - New Design */}
+        <div className="space-y-8">
+          {/* Heading */}
+          
 
-          {/* Tab Content */}
-          <div className="bg-white p-4 rounded border border-[#0a2463] text-[#0a2463] text-sm shadow">
-            {renderTabContent()}
-          </div>
-
-          {/* Tabs */}
-          <div className="flex flex-wrap gap-3">
+          {/* Tab Navigation */}
+          <div className="grid sm:grid-cols-2 gap-4 mt-[80px]">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-4 py-2 rounded-full text-sm border transition font-medium ${
+                className={`flex flex-col items-start p-4 rounded-lg border transition-all duration-300 ${
                   activeTab === tab.id
-                    ? 'bg-[#0a2463] text-yellow-400 border-[#0a2463]'
-                    : 'border-[#0a2463] text-[#0a2463] hover:bg-[#0a2463] hover:text-white'
+                    ? 'bg-orange-500/20 border-orange-400 shadow-lg'
+                    : 'border-white/20 hover:bg-orange-500/10'
                 }`}
               >
-                {tab.label}
+                <div className="flex items-center gap-3">
+                  <div className="bg-orange-500/20 p-2 rounded-full">
+                    {tab.icon}
+                  </div>
+                  <span className="font-semibold">{tab.label}</span>
+                </div>
+                <p className="text-xs text-white/70 mt-2">{tab.desc}</p>
               </button>
             ))}
           </div>
+
+          {/* Tab Content Box */}
+          
+
+          {/* Extra Small Features */}
+          
         </div>
 
-        {/* Right Registration Form */}
-        <div className="w-full max-w-md bg-white text-[#0a2463] border border-[#0a2463] rounded-xl p-8 mx-auto shadow-xl">
+        {/* Right Form */}
+        <div className="w-full max-w-md bg-white/10 backdrop-blur-md border border-orange-400 rounded-xl p-8 shadow-lg ml-[170px] mt-[40px]">
           <h2 className="text-2xl font-bold text-center mb-6">Partner with Us</h2>
           <form onSubmit={handleSubmit}>
             <input
@@ -92,7 +115,7 @@ const Ccanimation = () => {
               placeholder="Full Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full mb-4 px-4 py-2 border border-[#0a2463] rounded focus:outline-none focus:ring-2 focus:ring-[#0a2463]"
+              className="w-full mb-4 px-4 py-2 bg-transparent border border-orange-400 rounded text-white placeholder-orange-200 focus:outline-none"
               required
             />
             <input
@@ -101,7 +124,7 @@ const Ccanimation = () => {
               placeholder="Email Address"
               value={formData.email}
               onChange={handleChange}
-              className="w-full mb-4 px-4 py-2 border border-[#0a2463] rounded focus:outline-none focus:ring-2 focus:ring-[#0a2463]"
+              className="w-full mb-4 px-4 py-2 bg-transparent border border-orange-400 rounded text-white placeholder-orange-200 focus:outline-none"
               required
             />
             <input
@@ -110,12 +133,12 @@ const Ccanimation = () => {
               placeholder="Company Name"
               value={formData.company}
               onChange={handleChange}
-              className="w-full mb-6 px-4 py-2 border border-[#0a2463] rounded focus:outline-none focus:ring-2 focus:ring-[#0a2463]"
+              className="w-full mb-6 px-4 py-2 bg-transparent border border-orange-400 rounded text-white placeholder-orange-200 focus:outline-none"
               required
             />
             <button
               type="submit"
-              className="w-full bg-[#0a2463] text-yellow-400 py-2 font-semibold rounded hover:bg-[#051638] transition"
+              className="w-full bg-orange-500 text-white py-2 rounded font-semibold hover:bg-orange-600 transition"
             >
               Submit Inquiry
             </button>
@@ -123,24 +146,42 @@ const Ccanimation = () => {
         </div>
       </div>
 
-      {/* Bottom Feature Tabs */}
-      <div className="mt-16 bg-[#0a2463] py-10 rounded-xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {[Server, PhoneForwarded, Globe2, Settings].map((Icon, i) => (
-            <div
-              key={i}
-              className="flex flex-col items-center bg-yellow-100 p-4 rounded-lg text-center shadow"
-            >
-              <div className="w-12 h-12 bg-[#0a2463] flex items-center justify-center rounded-full mb-3">
-                <Icon className="text-yellow-400 w-6 h-6" />
-              </div>
-              <p className="text-sm font-medium text-[#0a2463]">{
-                ['Carrier Access', 'Call Routing', 'Global Interop', 'Advanced Settings'][i]
-              }</p>
-            </div>
-          ))}
-        </div>
+      {/* Bottom Features Set 1 */}
+{/* Bottom Features Set 1 */}
+<div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto mt-[40px]">
+  {[Server, PhoneForwarded, Globe2, Settings].map((Icon, i) => (
+    <div
+      key={i}
+      className="flex flex-col items-center bg-white/10 border border-orange-400 px-6 py-4 rounded-lg text-center shadow hover:bg-orange-500/10 transition min-w-[180px]"
+    >
+      <div className="w-12 h-12 bg-orange-500/20 flex items-center justify-center rounded-full mb-2">
+        <Icon className="text-orange-300 w-6 h-6" />
       </div>
+      <p className="text-sm font-medium text-orange-200">
+        {['Carrier Access', 'Call Routing', 'Global Interop', 'Advanced Settings'][i]}
+      </p>
+    </div>
+  ))}
+</div>
+
+{/* Bottom Features Set 2 */}
+<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+  {[Cloud, Shield, Zap, Users].map((Icon, i) => (
+    <div
+      key={i}
+      className="flex flex-col items-center bg-white/10 border border-orange-400 px-6 py-4 rounded-lg text-center shadow hover:bg-orange-500/10 transition min-w-[180px]"
+    >
+      <div className="w-12 h-12 bg-orange-500/20 flex items-center justify-center rounded-full mb-2">
+        <Icon className="text-orange-300 w-6 h-6" />
+      </div>
+      <p className="text-sm font-medium text-orange-200">
+        {['Cloud Routing', 'Secure Network', 'Fast Delivery', 'Global Clients'][i]}
+      </p>
+    </div>
+  ))}
+</div>
+
+
     </section>
   );
 };
