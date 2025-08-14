@@ -33,7 +33,7 @@ const TelecomMasteryLayout = () => {
       </div>
 
       {/* Right Infographic */}
-      <div className="lg:w-1/2 flex flex-col items-center justify-center relative max-h-[700px]">
+      <div className="lg:w-1/2 flex flex-col items-center justify-center relative max-h-[700px] mt-[-50px]">
         {/* Dotted Lines */}
         <svg className="absolute inset-0 w-full h-full z-0" viewBox="0 0 400 450">
           <defs>
@@ -61,7 +61,7 @@ const TelecomMasteryLayout = () => {
           <div className="flex flex-col items-center w-1/3 px-2 relative">
             <div className="bg-blue-400 text-white rounded-xl shadow-lg p-4 pt-12 text-center w-[130px] h-[110px] flex flex-col justify-center transform hover:scale-105 transition-all duration-300">
               <h4 className="text-sm font-bold mb-2">Time Management</h4>
-              <p className="text-xs opacity-90 leading-tight">Optimize workflow scheduling.</p>
+              <p className="text-xs opacity-90 leading-tight"></p>
             </div>
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full shadow-xl bg-blue-100 border-4 border-white z-10 flex items-center justify-center">
               <Clock className="w-6 h-6 text-blue-600" />
@@ -72,7 +72,7 @@ const TelecomMasteryLayout = () => {
           <div className="flex flex-col items-center w-1/3 px-2 relative">
             <div className="bg-orange-400 text-white rounded-xl shadow-lg p-4 pt-12 text-center w-[130px] h-[110px] flex flex-col justify-center transform hover:scale-105 transition-all duration-300">
               <h4 className="text-sm font-bold mb-2">Processing Power</h4>
-              <p className="text-xs opacity-90 leading-tight">Advanced computing capabilities.</p>
+              <p className="text-xs opacity-90 leading-tight"></p>
             </div>
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full shadow-xl bg-orange-100 border-4 border-white z-10 flex items-center justify-center">
               <Cpu className="w-6 h-6 text-orange-600" />
@@ -83,7 +83,7 @@ const TelecomMasteryLayout = () => {
           <div className="flex flex-col items-center w-1/3 px-2 relative">
             <div className="bg-teal-400 text-white rounded-xl shadow-lg p-4 pt-12 text-center w-[130px] h-[110px] flex flex-col justify-center transform hover:scale-105 transition-all duration-300">
               <h4 className="text-sm font-bold mb-2">Task Management</h4>
-              <p className="text-xs opacity-90 leading-tight">Project tracking solutions.</p>
+              <p className="text-xs opacity-90 leading-tight"></p>
             </div>
             <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full shadow-xl bg-teal-100 border-4 border-white z-10 flex items-center justify-center">
               <ClipboardList className="w-6 h-6 text-teal-600" />
@@ -104,8 +104,8 @@ const TelecomMasteryLayout = () => {
           {/* Innovation */}
           <div className="flex flex-col items-center w-1/3 px-2 relative">
             <div className="bg-cyan-400 text-white rounded-xl shadow-lg p-4 pb-12 text-center w-[130px] h-[110px] flex flex-col justify-center transform hover:scale-105 transition-all duration-300">
-              <h4 className="text-sm font-bold mb-2">Innovation</h4>
-              <p className="text-xs opacity-90 leading-tight">Creative technology solutions.</p>
+              <h4 className="text-sm font-bold mb-2">Creative technology .</h4>
+              <p className="text-xs opacity-90 leading-tight"></p>
             </div>
             <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full shadow-xl bg-cyan-100 border-4 border-white z-10 flex items-center justify-center">
               <Lightbulb className="w-6 h-6 text-cyan-600" />
@@ -115,8 +115,8 @@ const TelecomMasteryLayout = () => {
           {/* Development */}
           <div className="flex flex-col items-center w-1/3 px-2 relative">
             <div className="bg-blue-500 text-white rounded-xl shadow-lg p-4 pb-12 text-center w-[130px] h-[110px] flex flex-col justify-center transform hover:scale-105 transition-all duration-300">
-              <h4 className="text-sm font-bold mb-2">Development</h4>
-              <p className="text-xs opacity-90 leading-tight">Custom software solutions.</p>
+              <h4 className="text-sm font-bold mb-2"> Software solutions.</h4>
+              <p className="text-xs opacity-90 leading-tight"></p>
             </div>
             <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full shadow-xl bg-blue-100 border-4 border-white z-10 flex items-center justify-center">
               <Code className="w-6 h-6 text-blue-600" />
@@ -126,8 +126,8 @@ const TelecomMasteryLayout = () => {
           {/* Goal Achievement */}
           <div className="flex flex-col items-center w-1/3 px-2 relative">
             <div className="bg-indigo-500 text-white rounded-xl shadow-lg p-4 pb-12 text-center w-[130px] h-[110px] flex flex-col justify-center transform hover:scale-105 transition-all duration-300">
-              <h4 className="text-sm font-bold mb-2">Goal Achievement</h4>
-              <p className="text-xs opacity-90 leading-tight">Strategic milestone tracking.</p>
+              <h4 className="text-sm font-bold mb-2">Strategic milestone.</h4>
+              <p className="text-xs opacity-90 leading-tight"></p>
             </div>
             <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full shadow-xl bg-indigo-100 border-4 border-white z-10 flex items-center justify-center">
               <Flag className="w-6 h-6 text-indigo-600" />

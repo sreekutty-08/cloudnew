@@ -1,8 +1,6 @@
 import React from 'react';
-import { Globe, Phone, Zap, Shield, Users, Award } from 'lucide-react';
 
 const CloudQlobeGlobal = () => {
-  // Updated flag URLs for requested countries (latest flags)
   const topFlags = [
     { name: 'USA', flagUrl: 'https://flagcdn.com/w160/us.png', color: 'from-red-500 to-blue-600' },
     { name: 'United Kingdom', flagUrl: 'https://flagcdn.com/w160/gb.png', color: 'from-red-600 to-blue-700' },
@@ -20,24 +18,14 @@ const CloudQlobeGlobal = () => {
   ];
 
   return (
-    <div className="h-[680px] bg-white relative overflow-hidden">
-      {/* Subtle Background Elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
-      </div>
-
-      {/* Additional subtle background icons */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        {/* Light colored background icons */}
-        <Globe className="absolute top-10 right-16 text-blue-100 w-20 h-20 opacity-20" />
-        <Phone className="absolute top-28 left-12 text-cyan-100 w-16 h-16 opacity-15" />
-        <Zap className="absolute bottom-32 right-24 text-yellow-100 w-24 h-24 opacity-10" />
-        <Shield className="absolute bottom-10 left-24 text-green-100 w-20 h-20 opacity-15" />
-        <Users className="absolute top-48 right-40 text-purple-100 w-24 h-24 opacity-10" />
-        <Award className="absolute bottom-40 left-40 text-orange-100 w-20 h-20 opacity-15" />
-      </div>
-
+    <div
+      className="h-[680px] relative overflow-hidden"
+      style={{
+        backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1000'><filter id='dots'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncA type='table' tableValues='0 0.1'/></feComponentTransfer></filter><rect width='2000' height='1000' fill='white'/><image href='https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg' width='2000' height='1000' style='filter:url(%23dots); opacity:0.2' /></svg>")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <div className="flex h-full relative z-10">
         {/* Left Side - Content */}
         <div className="lg:w-1/2 flex flex-col justify-center z-10 ml-[60px]">
@@ -63,13 +51,11 @@ const CloudQlobeGlobal = () => {
         {/* Right Side - Global Map with Real Flags */}
         <div className="flex-1 relative flex flex-col items-center justify-center p-4">
           <div className="relative w-full max-w-xl h-full flex flex-col items-center justify-center">
-
-            {/* Top Row Flags (moved up a bit) with increased spacing */}
+            {/* Top Row Flags */}
             <div className="flex space-x-12 z-10 mb-16 -mt-8 ml-[-100px]">
               {topFlags.map((country, index) => (
                 <div key={`top-${index}`} className="relative group cursor-pointer">
-                  <div className="w-20 h-20 overflow-hidden border-3 border-white shadow-2xl hover:scale-110 transition-all duration-300 hover:shadow-blue-500/25 bg-white">
-                    {/* Square corners */}
+                  <div className="w-[100px] h-[60px] overflow-hidden border-2 border-white shadow-2xl hover:scale-110 transition-all duration-300 hover:shadow-blue-500/25 bg-white">
                     <img
                       src={country.flagUrl}
                       alt={`${country.name} flag`}
@@ -92,12 +78,11 @@ const CloudQlobeGlobal = () => {
               ))}
             </div>
 
-            {/* Bottom Row Flags with increased spacing */}
+            {/* Bottom Row Flags */}
             <div className="flex space-x-12 z-10 ml-[-100px]">
               {bottomFlags.map((country, index) => (
                 <div key={`bottom-${index}`} className="relative group cursor-pointer">
-                  <div className="w-[80px] h-[80px] overflow-hidden border-3 border-white shadow-2xl hover:scale-110 transition-all duration-300 hover:shadow-blue-500/25 bg-white">
-                    {/* Square corners */}
+                  <div className="w-[100px] h-[60px] overflow-hidden border-2 border-white shadow-2xl hover:scale-110 transition-all duration-300 hover:shadow-blue-500/25 bg-white">
                     <img
                       src={country.flagUrl}
                       alt={`${country.name} flag`}
@@ -119,31 +104,6 @@ const CloudQlobeGlobal = () => {
                 </div>
               ))}
             </div>
-
-            {/* Floating Data Points */}
-            <div className="absolute top-10 right-10 w-3 h-3 bg-blue-500 rounded-full opacity-60 animate-bounce"></div>
-            <div className="absolute bottom-20 left-10 w-2 h-2 bg-cyan-500 rounded-full opacity-40 animate-bounce" style={{ animationDelay: '1s' }}></div>
-            <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-blue-400 rounded-full opacity-50 animate-bounce" style={{ animationDelay: '2s' }}></div>
-          </div>
-        </div>
-      </div>
-
-      {/* Stats Footer */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-white border border-gray-200 rounded-2xl px-8 py-4 shadow-xl">
-        <div className="flex items-center space-x-8 text-gray-700">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-blue-600">150+</div>
-            <div className="text-xs text-gray-500">Countries</div>
-          </div>
-          <div className="w-px h-8 bg-gray-200"></div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-cyan-600">99.9%</div>
-            <div className="text-xs text-gray-500">Uptime</div>
-          </div>
-          <div className="w-px h-8 bg-gray-200"></div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-green-600">24/7</div>
-            <div className="text-xs text-gray-500">Support</div>
           </div>
         </div>
       </div>
