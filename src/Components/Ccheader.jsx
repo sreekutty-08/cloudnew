@@ -19,17 +19,17 @@ const CloudQlobeGlobal = () => {
 
   return (
     <div
-      className="h-[680px] relative overflow-hidden"
+      className="h-[764px] relative overflow-hidden"
       style={{
         backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1000'><filter id='dots'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1'/><feColorMatrix type='saturate' values='0'/><feComponentTransfer><feFuncA type='table' tableValues='0 0.1'/></feComponentTransfer></filter><rect width='2000' height='1000' fill='white'/><image href='https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg' width='2000' height='1000' style='filter:url(%23dots); opacity:0.2' /></svg>")`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
-      <div className="flex h-full relative z-10">
+      <div className="flex h-full relative z-10 min-w-[1100px]">
         {/* Left Side - Content */}
-        <div className="lg:w-1/2 flex flex-col justify-center z-10 ml-[60px]">
-          <h1 className="text-4xl lg:text-5xl font-Default text-gray-800 mb-6 leading-snug">
+        <div className="w-1/2 flex flex-col justify-center z-10 ml-[80px] mt-[-40px]">
+          <h1 className="text-5xl font-Default text-gray-800 mb-6 leading-snug">
             The mastery of <span className="text-blue-500">Telecom</span>
           </h1>
           <p className="text-gray-700 text-base leading-relaxed mb-8 max-w-[520px]">
@@ -39,18 +39,18 @@ const CloudQlobeGlobal = () => {
             infrastructure across all regions.
           </p>
           <div className="flex gap-4">
-            <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <button className="bg-blue-500 text-white px-6 py-3 squared-lg hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Get Started
             </button>
-            <button className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-all duration-300 hover:border-gray-400">
+            <button className="border-2 border-gray-300 text-gray-700 px-6 py-3 squared-lg hover:bg-gray-50 transition-all duration-300 hover:border-gray-400">
               Learn More
             </button>
           </div>
         </div>
 
         {/* Right Side - Global Map with Real Flags */}
-        <div className="flex-1 relative flex flex-col items-center justify-center p-4">
-          <div className="relative w-full max-w-xl h-full flex flex-col items-center justify-center">
+        <div className="w-1/2 relative flex flex-col items-center justify-center p-4 mt-[-70px]">
+          <div className="relative w-[500px] h-[500px] flex flex-col items-center justify-center">
             {/* Top Row Flags */}
             <div className="flex space-x-12 z-10 mb-16 -mt-8 ml-[-100px]">
               {topFlags.map((country, index) => (

@@ -3,12 +3,12 @@ import { Globe, Users, Zap, Shield } from 'lucide-react';
 
 const TelecomHeroSection = () => {
   return (
-    <div className="py-16 bg-gradient-to-br from-white to-gray-100 flex items-center h-[690px]">
+    <div className="py-16 bg-white flex items-center h-[764px]">
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-10">
 
           {/* Left Side Content */}
-          <div className="lg:w-1/2 flex flex-col justify-center z-10 mt-[-130px] ml-[30px]">
+          <div className="lg:w-1/2 flex flex-col justify-center z-10 mt-[-50px] ml-[50px]">
             <h1 className="text-4xl lg:text-5xl font-default text-gray-800 mb-6 leading-snug">
               The mastery of <span className="text-blue-500">Telecom</span>
             </h1>
@@ -19,17 +19,17 @@ const TelecomHeroSection = () => {
               infrastructure across all regions.
             </p>
             <div className="flex gap-4">
-              <button className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+              <button className="bg-blue-500 text-white px-6 py-3 squared-lg hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                 Get Started
               </button>
-              <button className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-50 transition-all duration-300 hover:border-gray-400">
+              <button className="border-2 border-gray-300 text-gray-700 px-6 py-3 squared-lg hover:bg-gray-50 transition-all duration-300 hover:border-gray-400">
                 Learn More
               </button>
             </div>
           </div>
 
           {/* Right Side Timeline Infographic */}
-          <div className="lg:w-1/2 relative space-y-1.5 ml-[60px] mt-[-60px]">
+          <div className="lg:w-1/2 relative space-y-1.5 ml-[50px] mt-[-40px]">
 
             {/* Item 1 */}
             <div className="flex items-center relative">

@@ -15,11 +15,11 @@ import { LuGlobeLock, LuLoaderPinwheel, LuLayers, LuMails, LuTarget, LuBoxes } f
 
 const Contactheader = () => {
   return (
-    <section className="bg-white min-h-[680px] flex items-center px-6 md:px-12 py-12">
+    <section className="bg-white h-[764px] flex items-center px-6 md:px-12 py-12">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center w-full relative">
 
         {/* Left Content */}
-        <div className="mt-[-150px] ml-[20px]">
+        <div className="mt-[-60px] ml-[-4px]">
           <h1 className="text-4xl md:text-5xl font-default leading-snug text-gray-500 ml-[-40px] mb-6">
             The mastery of <span className="text-blue-500 font-default">Telecom</span>
           </h1>
@@ -40,7 +40,7 @@ const Contactheader = () => {
         </div>
 
         {/* Right Icon Area */}
-        <div className="relative w-full h-[600px] mt-[-100px] ml-[100px]">
+        <div className="relative  h-[600px] mt-[-50px] ml-[145px]">
 
           {/* 1 */}
           <div className="absolute top-[-35px] left-[-20px] bg-[#fbb315] w-[100px] h-[100px]  flex items-center border rounded-lg justify-center rotate-45 shadow-lg mt-[150px]">

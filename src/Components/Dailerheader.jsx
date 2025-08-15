@@ -48,12 +48,12 @@ const TelecomHeroSection = () => {
   ];
 
   return (
-    <div className="min-h-[680px] py-4 bg-gradient-to-br from-white to-white flex items-center">
+    <div className="min-h-[764px] py-4 bg-gradient-to-br from-white to-white flex items-center">
 
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Left Side Content */}
-          <div className="lg:w-1/2 flex flex-col justify-center z-10 ml-[45px] mt-[-180px]">
+          <div className="lg:w-1/2 flex flex-col justify-center z-10 ml-[45px] mt-[-50px]">
             <h1 className="text-4xl lg:text-5xl font-default text-gray-800 mb-6 leading-snug">
               The mastery of <span className="text-blue-500">Telecom</span>
             </h1>
@@ -74,7 +74,7 @@ const TelecomHeroSection = () => {
           </div>
 
           {/* Right Side Infographic */}
-          <div className="lg:w-1/2 relative mt-[-150px]">
+          <div className="lg:w-1/2 relative mt-[-50px]">
             <div className="space-y-8">
               
               {/* Top Row - Circular Numbers */}

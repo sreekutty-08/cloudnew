@@ -16,10 +16,10 @@ import { GrSettingsOption } from "react-icons/gr";
 
 const Homeheader = () => {
   return (
-    <section className="bg-white py-20 px-6 mt-[200px]">
+    <section className="bg-white py-24 px-6 mt-[200px] ">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left Side */}
-        <div className="mt-[-280px]">
+        <div className="mt-[-150px]">
           <h1 className="text-4xl md:text-5xl font-default leading-snug text-gray-500 ml-[-40px] mb-6">
             The mastery of <span className="text-blue-500 font-default">Telecom</span>
           </h1>
@@ -40,7 +40,7 @@ const Homeheader = () => {
         </div>
 
         {/* Right Side Diamond Infographic */}
-        <div className="relative w-[320px] h-[320px] mx-auto mt-[-100px]">
+        <div className="relative w-[320px] h-[320px] mx-auto mt-[-50px]">
           {/* Center Diamond */}
          <div className="absolute left-[120px] top-[110px] w-[200px] h-[200px] bg-white text-center flex flex-col gap-2 items-center justify-center text-sm font-semibold text-red-500 transform -translate-x-1/2 -translate-y-1/2 rotate-45 shadow-md z-20">
             < SiPaloaltosoftware className="-rotate-45 text-orange-300 w-[100px] h-[100px]" />

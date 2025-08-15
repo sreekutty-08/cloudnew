@@ -47,7 +47,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="max-w-8xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-white ">
+  <div className="max-w-8xl mx-auto px-4 py-3 flex items-center justify-between">
       {/* Logo */}
       <div className="flex-shrink-0 ml-[50px]">
         <img src={logo} alt="Cloudqlobe Logo" className="h-16 w-auto" />
@@ -226,6 +227,7 @@ const Navbar = () => {
           Login
         </Link>
       </div>
+    </div>
     </div>
   );
 };

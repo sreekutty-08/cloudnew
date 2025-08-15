@@ -76,7 +76,7 @@ const Ccanimation = () => {
           
 
           {/* Tab Navigation */}
-          <div className="grid sm:grid-cols-2 gap-4 mt-[80px]">
+          <div className="grid sm:grid-cols-2 gap-4 mt-[80px] ml-[-40px]">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -106,7 +106,7 @@ const Ccanimation = () => {
         </div>
 
         {/* Right Form */}
-        <div className="w-full max-w-md bg-white/10 backdrop-blur-md border border-orange-400 rounded-xl p-8 shadow-lg ml-[170px] mt-[40px]">
+        <div className="w-full max-w-md bg-white/10 backdrop-blur-md border border-orange-400 rounded-xl p-8 shadow-lg ml-[200px] mt-[40px]">
           <h2 className="text-2xl font-bold text-center mb-6">Partner with Us</h2>
           <form onSubmit={handleSubmit}>
             <input
@@ -148,7 +148,7 @@ const Ccanimation = () => {
 
       {/* Bottom Features Set 1 */}
 {/* Bottom Features Set 1 */}
-<div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto mt-[40px]">
+<div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-[1350px] mx-auto mt-[40px] ml-[56px]">
   {[Server, PhoneForwarded, Globe2, Settings].map((Icon, i) => (
     <div
       key={i}
@@ -165,7 +165,7 @@ const Ccanimation = () => {
 </div>
 
 {/* Bottom Features Set 2 */}
-<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+<div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-[1350px] mx-auto mt-[40px] ml-[56px]">
   {[Cloud, Shield, Zap, Users].map((Icon, i) => (
     <div
       key={i}

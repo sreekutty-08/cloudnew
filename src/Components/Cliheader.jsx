@@ -10,9 +10,9 @@ import {
 
 const TelecomMasteryLayout = () => {
   return (
-    <div className="flex flex-col lg:flex-row px-4 lg:px-12 py-8 bg-white min-h-screen gap-8 lg:gap-16 mt-[-50px] ">
+    <div className="flex flex-col lg:flex-row px-4 lg:px-12 py-8 bg-white h-[814px] gap-8 lg:gap-16 mt-[-50px] ">
       {/* Left Content */}
-      <div className="lg:w-1/2 flex flex-col justify-center z-10 ml-[60px]">
+      <div className="lg:w-1/2 flex flex-col justify-center z-10 ml-[30px]">
         <h1 className="text-4xl lg:text-5xl font-Default text-gray-800 mb-6 leading-snug">
           The mastery of <span className="text-blue-500">Telecom</span>
         </h1>
@@ -33,7 +33,7 @@ const TelecomMasteryLayout = () => {
       </div>
 
       {/* Right Infographic */}
-      <div className="lg:w-1/2 flex flex-col items-center justify-center relative max-h-[700px] mt-[-50px]">
+      <div className="lg:w-1/2 flex flex-col items-center justify-center relative max-h-[700px] mt-[30px] ml-[300px]">
         {/* Dotted Lines */}
         <svg className="absolute inset-0 w-full h-full z-0" viewBox="0 0 400 450">
           <defs>

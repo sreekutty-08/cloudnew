@@ -12,10 +12,10 @@ const iconClass = "w-5 h-5 text-white";
 
 const FaqBubbles = () => {
   return (
-    <div className="bg-white min-h-[800px] flex items-center justify-center px-4 mt-[-100px]">
+    <div className="bg-white min-h-[864px] flex items-center justify-center px-4 mt-[-100px]">
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-       <div className="mt-[-80px] ml-[-40px]">
+       <div className="mt-[50px] ml-[-65px]">
           <h1 className="text-4xl md:text-5xl font-default leading-snug text-gray-500 ml-[-40px] mb-6">
             The mastery of <span className="text-blue-500 font-default">Telecom</span>
           </h1>
@@ -38,7 +38,7 @@ const FaqBubbles = () => {
 
         {/* Right: Dual Circle with Icons on Sides */}
         {/* Right: Dual Circle with Icons on Sides */}
-<div className="relative w-[300px] h-[300px] mx-auto mt-[100px] ml-[180px] flex items-center justify-center mt-[-30px]">
+<div className="relative w-[300px] h-[300px] mx-auto mt-[60px] ml-[250px] flex items-center justify-center  ">
 
            
 

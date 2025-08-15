@@ -15,12 +15,12 @@ import {
 
 const InfographicLayout = () => {
   return (
-    <div className="h-[680px] bg-white flex items-center justify-center px-4 py-8">
+    <div className="h-[764px] bg-white flex items-center justify-center px-4 py-8">
       {/* Main Container */}
       <div className="max-w-6xl w-full grid grid-cols-2 gap-8">
         
         {/* Left Side Content */}
-        <div className="mt-[-10px] ml-[-50px]">
+        <div className="mt-[80px] ml-[-65px]">
           <h1 className="text-4xl md:text-5xl font-default leading-snug text-gray-500 ml-[-40px] mb-6">
             The mastery of <span className="text-blue-500 font-default">Telecom</span>
           </h1>
@@ -41,7 +41,7 @@ const InfographicLayout = () => {
         </div>
 
         {/* Right Side Infographic */}
-        <div className="relative flex items-center justify-center ml-[80px] ">
+        <div className="relative flex items-center justify-center ml-[50px] mt-[100px] ">
           
           {/* Timeline Items */}
           <div className="space-y-6">

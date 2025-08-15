@@ -55,9 +55,9 @@ const Ccanimation = () => {
 
   return (
     <section className="bg-[#0a2463] text-white py-20 px-6">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 mt-[20px]">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 mt-[20px] ml-[120px]">
         {/* Left Content */}
-        <div>
+        <div className='ml-[-60px]'>
           <h2 className="text-4xl  text-white font-default mb-4">Cloud Qlobe <span  className='text-orange-500'>CC Routes Solutions</span></h2>
           <p className="mb-6 text-lg text-white-300">
             Choose the right route for your voice business. Flexible, scalable, and supported by experts.
@@ -90,7 +90,7 @@ const Ccanimation = () => {
         </div>
 
         {/* Right Transparent Registration */}
-        <div className="flex justify-center items-center ml-[160px] mt-[-40px]">
+        <div className="flex justify-center items-center ml-[200px] mt-[-40px]">
           <form
             onSubmit={handleSubmit}
             className="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl shadow-lg p-8 w-full max-w-md"
@@ -134,7 +134,7 @@ const Ccanimation = () => {
       </div>
 
       {/* Bottom Features */}
-      <div className="mt-16 max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 mt-[30px]">
+      <div className="mt-16  w-[1340px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 mt-[30px] ml-[59px]">
         {features.map((item, idx) => (
           <div
             key={idx}

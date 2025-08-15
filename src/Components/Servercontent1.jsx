@@ -16,7 +16,7 @@ const Homecontent1 = () => {
             className="w-[480px] h-[400px] object-cover rounded-lg"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             High-Quality <span className="text-orange-500">CC Routes</span>
           </h2>
@@ -30,7 +30,7 @@ const Homecontent1 = () => {
       </section>
 
       {/* CLI Voice Termination Section */}
-      <section className="grid md:grid-cols-2 items-center gap-10 mb-24 max-w-7xl mx-auto">
+      <section className="grid md:grid-cols-2 items-center gap-10 mb-24 max-w-7xl mx-auto ml-[35px]">
         <div className="flex flex-col justify-center w-full max-w-[850px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Trusted <span className="text-orange-500">CLI Voice Terminations</span>
@@ -60,7 +60,7 @@ const Homecontent1 = () => {
             className="w-[480px] h-[420px] object-cover rounded-lg"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Global <span className="text-orange-500">DID Number Solutions</span>
           </h2>

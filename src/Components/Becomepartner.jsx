@@ -65,7 +65,7 @@ const TradePartner3DSection = () => {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
         
         {/* LEFT SIDE - CONTENT */}
-        <div className="text-white space-y-4 mt-[-100px]">
+        <div className="text-white space-y-4 mt-[-100px] ml-[-10px]">
           {/* Achievements Section */}
        
 
