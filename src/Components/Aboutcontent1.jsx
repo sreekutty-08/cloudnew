@@ -1,74 +1,77 @@
 import React from 'react';
+import Homeimage48 from '../assets/5_communication02.jpg'
+import Homeimage50 from '../assets/6072191.jpg'
+import Homeimage51 from '../assets/3489823.jpg'
 
 const Homecontent1 = () => {
   return (
     <div className="min-h-screen w-full bg-white px-12 py-16 overflow-hidden">
       <h1 className="text-[40px] font-normal font-[Roboto,Arial,sans-serif] text-center text-black mb-20 mt-8 leading-snug">
-        Explore the Future of Communication with Our <span className="text-blue-800">Advanced Telecom Solutions</span>
+        Welcome to <span className="text-blue-800">We Cloud Qlobe</span> – Leading the Future of Telecom
       </h1>
 
-      {/* CC Routes Section */}
+      {/* Our Company Section */}
       <section className="grid md:grid-cols-2 items-center gap-10 mb-24 max-w-7xl mx-auto">
         <div className="flex justify-center items-center w-full p-2">
           <img
-            src="https://img.freepik.com/free-vector/gps-location-car-service_18591-51105.jpg?t=st=1753597676~exp=1753601276~hmac=c8a8a87efbcdca291f24206f921ffb04fda807a7a5400b45ab1c8ff302dd0af8&w=1380"
-            alt="CC Routes"
+            src={Homeimage50}
+            alt="Our Company"
             className="w-[480px] h-[400px] object-cover rounded-lg"
           />
         </div>
         <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
-            High-Quality <span className="text-orange-500">CC Routes</span>
+            Who We Are
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify mb-4">
-            Our Call Center (CC) Routes are tailored for high-volume outbound traffic, offering a strategic advantage for businesses operating large-scale campaigns, support centers, or customer acquisition teams. These routes are built for optimized voice clarity, redundancy, and traffic prioritization, ensuring zero call drops and superior client interaction in real-time.
+          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify mb-4">
+            We Cloud Qlobe is a globally recognized telecom leader dedicated to connecting businesses, enterprises, and individuals across the world. With years of experience and an unwavering commitment to innovation, we deliver cutting-edge communication solutions that empower organizations to achieve seamless connectivity, operational efficiency, and measurable growth. Our solutions leverage the latest in VoIP, cloud technology, and digital infrastructure, ensuring reliable and crystal-clear communication for every client.
           </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify">
-            With low PDD (Post Dial Delay) and multiple routing layers, we offer both CLI and non-CLI options across key destinations. Our infrastructure is continuously monitored by automated quality checkers, providing unparalleled reliability. CloudQlobe partners with top-tier global carriers to maintain consistent ACD (Average Call Duration) and ASR (Answer-Seizure Ratio), all while keeping your billing flexible and transparent.
+          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify">
+            Our mission is to redefine the way businesses communicate globally, offering scalable, cost-effective, and technologically advanced solutions. By combining strategic partnerships with dedicated support and advanced analytics, we ensure our clients benefit from unmatched service quality, global reach, and real-time insights that strengthen decision-making and boost overall communication performance.
           </p>
         </div>
       </section>
 
-      {/* CLI Voice Termination Section */}
+      {/* Working Atmosphere Section */}
       <section className="grid md:grid-cols-2 items-center gap-10 mb-24 max-w-7xl mx-auto ml-[35px]">
         <div className="flex flex-col justify-center w-full max-w-[850px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
-            Trusted <span className="text-orange-500">CLI Voice Terminations</span>
+            Our <span className="text-orange-500">Working Atmosphere</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify mb-4">
-            CloudQlobe’s CLI (Calling Line Identification) termination ensures your brand identity is maintained across all communications. By displaying verified, local, and geographically familiar caller IDs, your calls are more likely to be answered and trusted, increasing lead engagement and customer satisfaction.
+          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify mb-4">
+            At We Cloud Qlobe, we cultivate a dynamic, inclusive, and collaborative work environment where creativity and innovation thrive. Our teams are empowered to share ideas, experiment with new technologies, and lead projects that drive both personal growth and organizational success. By fostering open communication and continuous learning, we ensure that every employee feels valued, motivated, and equipped to contribute meaningfully to our clients’ success.
           </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify">
-            Our CLI routes comply with international standards and regulatory frameworks, supporting customized caller ID options and dynamic call routing based on your campaign's geographic target. Ideal for outbound marketing, appointment setting, and international B2B interactions, these terminations help establish credibility while maximizing performance metrics such as CPA (Cost Per Acquisition) and ROI. Enjoy round-the-clock monitoring and dedicated technical support for every route deployed.
+          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify">
+            Our offices are designed to inspire teamwork and productivity, with spaces that encourage brainstorming, collaboration, and knowledge sharing. We place a strong emphasis on work-life balance, mentorship, and employee development programs, believing that a motivated and engaged workforce directly translates into superior solutions, exceptional client experiences, and sustained business growth.
           </p>
         </div>
         <div className="flex justify-center items-center w-full p-2">
           <img
-            src="https://img.freepik.com/free-vector/technical-support-customer-service-flat-illustration_1150-51047.jpg"
-            alt="CLI Voice Terminations"
+            src={Homeimage48}
+            alt="Working Atmosphere"
             className="w-[480px] h-[400px] object-cover rounded-lg"
           />
         </div>
       </section>
 
-      {/* DID Solutions Section */}
+      {/* Our Services Section */}
       <section className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto">
         <div className="flex justify-center items-center w-full p-2">
           <img
-            src="https://img.freepik.com/free-vector/people-using-different-electronic-devices-such-as-smartphone-laptop-tablet-radio-fields-electromagnetic-pollution_335657-4391.jpg?t=st=1753597790~exp=1753601390~hmac=69c11fa6dd5cd85428c3551e280ab36e48bc1849a84c014db878a23de4fceea2&w=1380"
-            alt="DID Solutions"
+            src={Homeimage51}
+            alt="Our Services"
             className="w-[480px] h-[420px] object-cover rounded-lg"
           />
         </div>
         <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
-            Global <span className="text-orange-500">DID Number Solutions</span>
+            Our <span className="text-orange-500">Telecom Services</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify mb-4">
-            Establishing a virtual presence worldwide has never been easier. With our Direct Inward Dialing (DID) number solutions, you gain access to local, national, and toll-free numbers across 100+ countries — instantly. These numbers are indispensable for businesses that require global reach with local appeal, all without investing in physical infrastructure.
+          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify mb-4">
+            We Cloud Qlobe offers a comprehensive range of telecom services, including Call Center (CC) Routes, CLI Routes, VoIP Websites, Dialer Solutions, and DID Number Solutions. Our services are engineered to provide seamless connectivity, high-quality voice clarity, scalable solutions, and easy integration with existing systems, enabling businesses to operate efficiently at local and global levels.
           </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify">
-            Perfect for customer service hubs, remote teams, and VoIP PBX deployments, our DIDs support number portability, SIP trunking, and advanced call forwarding. You get complete control via a self-service portal, allowing real-time routing changes, live call reporting, and SIP registration. With CloudQlobe, every number comes with security, scalability, and seamless provisioning baked in.
+          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify">
+            Each solution is supported by our robust infrastructure, real-time monitoring, and expert technical support, ensuring reliability, security, and performance. Whether it’s optimizing outbound campaigns, establishing a global presence, or deploying advanced communication platforms, We Cloud Qlobe delivers cost-effective, technologically advanced, and client-focused telecom solutions that keep businesses connected anytime, anywhere.
           </p>
         </div>
       </section>

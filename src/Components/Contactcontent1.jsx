@@ -1,5 +1,9 @@
 import React from 'react';
 
+import Homeimage56 from '../assets/6225077.jpg'
+import Homeimage58 from '../assets/5138226.jpg'
+import Homeimage60 from '../assets/3670344.jpg'
+
 const Homecontent1 = () => {
   return (
     <div className="min-h-screen w-full bg-white px-12 py-16 overflow-hidden">
@@ -11,7 +15,7 @@ const Homecontent1 = () => {
       <section className="grid md:grid-cols-2 items-center gap-10 mb-24 max-w-7xl mx-auto">
         <div className="flex justify-center items-center w-full p-2">
           <img
-            src="https://img.freepik.com/free-vector/gps-location-car-service_18591-51105.jpg?t=st=1753597676~exp=1753601276~hmac=c8a8a87efbcdca291f24206f921ffb04fda807a7a5400b45ab1c8ff302dd0af8&w=1380"
+            src={Homeimage56}
             alt="CC Routes"
             className="w-[480px] h-[400px] object-cover rounded-lg"
           />
@@ -44,7 +48,7 @@ const Homecontent1 = () => {
         </div>
         <div className="flex justify-center items-center w-full p-2">
           <img
-            src="https://img.freepik.com/free-vector/technical-support-customer-service-flat-illustration_1150-51047.jpg"
+            src={Homeimage58}
             alt="CLI Voice Terminations"
             className="w-[480px] h-[400px] object-cover rounded-lg"
           />
@@ -55,7 +59,7 @@ const Homecontent1 = () => {
       <section className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto">
         <div className="flex justify-center items-center w-full p-2">
           <img
-            src="https://img.freepik.com/free-vector/people-using-different-electronic-devices-such-as-smartphone-laptop-tablet-radio-fields-electromagnetic-pollution_335657-4391.jpg?t=st=1753597790~exp=1753601390~hmac=69c11fa6dd5cd85428c3551e280ab36e48bc1849a84c014db878a23de4fceea2&w=1380"
+            src={Homeimage60}
             alt="DID Solutions"
             className="w-[480px] h-[420px] object-cover rounded-lg"
           />

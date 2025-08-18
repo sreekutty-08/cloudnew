@@ -1,74 +1,78 @@
 import React from 'react';
+import Homeimage1 from '../assets/3719997.jpg';
+import Homeimage2 from '../assets/ChatGPT Image Aug 17, 2025, 07_08_05 AM.png'
+import Homeimage3 from '../assets/5252489.jpg' // Make sure this file exists in src/assets
 
 const Homecontent1 = () => {
   return (
-    <div className="min-h-screen w-full bg-white px-12 py-16 overflow-hidden">
-      <h1 className="text-[40px] font-normal font-[Roboto,Arial,sans-serif] text-center text-black mb-20 mt-8 leading-snug">
-        Explore the Future of Communication with Our <span className="text-blue-800">Advanced Telecom Solutions</span>
+    <div className="min-h-screen w-full bg-white px-12 py-16 overflow-hidden mt-[-60px]">
+      <h1 className="text-[40px] font-normal font-[Roboto,Arial,sans-serif] text-center text-gray-500 mb-20 mt-8 leading-snug">
+         Seamless of  Communication with Our 
+        <span className="text-orange-500"> Advanced Telecom Technology</span>
       </h1>
 
       {/* CC Routes Section */}
-      <section className="grid md:grid-cols-2 items-center gap-10 mb-24 max-w-7xl mx-auto">
-        <div className="flex justify-center items-center w-full p-2">
+      <section className="grid md:grid-cols-2 items-center gap-10 mb-10 max-w-7xl mx-auto">
+        <div className="flex justify-center items-center w-full p-2 mt-[-180px]">
           <img
-            src="https://img.freepik.com/free-vector/gps-location-car-service_18591-51105.jpg?t=st=1753597676~exp=1753601276~hmac=c8a8a87efbcdca291f24206f921ffb04fda807a7a5400b45ab1c8ff302dd0af8&w=1380"
+            src={Homeimage2}
             alt="CC Routes"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[580px] h-[500px] object-cover rounded-lg ml-[-120px] mt-[180px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px]">
-          <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
-            High-Quality <span className="text-orange-500">CC Routes</span>
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px] mt-[-20px]">
+          <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-600 mb-4">
+             CC Routes for<span className="text-blue-500"> Reliable Global Connections</span>
           </h2>
           <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify mb-4">
-            Our Call Center (CC) Routes are tailored for high-volume outbound traffic, offering a strategic advantage for businesses operating large-scale campaigns, support centers, or customer acquisition teams. These routes are built for optimized voice clarity, redundancy, and traffic prioritization, ensuring zero call drops and superior client interaction in real-time.
+            We Cloud Qlobe provide next-generation CC Routes built on advanced telecom infrastructure that ensures seamless global connectivity and crystal-clear communication. Our routing systems are backed by intelligent algorithms, low-latency pathways, and redundant networks, designed to minimize downtime and deliver consistent call quality across multiple regions. Our CC Routes adapt with smart load balancing and automatic optimization to give you uninterrupted service at all times.
           </p>
           <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify">
-            With low PDD (Post Dial Delay) and multiple routing layers, we offer both CLI and non-CLI options across key destinations. Our infrastructure is continuously monitored by automated quality checkers, providing unparalleled reliability. CloudQlobe partners with top-tier global carriers to maintain consistent ACD (Average Call Duration) and ASR (Answer-Seizure Ratio), all while keeping your billing flexible and transparent.
+            We Cloud Qlobe go beyond just affordability by integrating cutting-edge technology with cost-effective solutions. With real-time traffic monitoring, fraud detection, and automated failover systems, we make sure your communications are both secure and efficient. Our strong carrier partnerships and optimized interconnects enable us to provide genuine, transparent pricing without compromising on quality. By combining scalability and reliability, we ensure your business enjoys affordable rates, future-ready solutions, and a trusted communication network that grows with your needs.
           </p>
         </div>
       </section>
 
       {/* CLI Voice Termination Section */}
-      <section className="grid md:grid-cols-2 items-center gap-10 mb-24 max-w-7xl mx-auto ml-[35px]">
+      <section className="grid md:grid-cols-2 items-center gap-10 mb-20 max-w-7xl mx-auto ml-[35px] mt-[-20px]">
         <div className="flex flex-col justify-center w-full max-w-[850px]">
-          <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
-            Trusted <span className="text-orange-500">CLI Voice Terminations</span>
+          <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-600 mb-4">
+           Premium CLI Routes<span className="text-blue-500"> with Trust and Transparency</span>
           </h2>
           <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify mb-4">
-            CloudQlobe’s CLI (Calling Line Identification) termination ensures your brand identity is maintained across all communications. By displaying verified, local, and geographically familiar caller IDs, your calls are more likely to be answered and trusted, increasing lead engagement and customer satisfaction.
+            At CloudQlobe provide premium CLI (Calling Line Identification) routes designed to deliver seamless voice connectivity with unmatched reliability. Our CLI routes ensure that every call displays the correct caller ID, enhancing trust, transparency, and professionalism in communication. With our robust carrier-grade infrastructure, businesses experience crystal-clear voice quality, minimal latency, and zero interruptions, making global outreach smoother than ever.
           </p>
           <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify">
-            Our CLI routes comply with international standards and regulatory frameworks, supporting customized caller ID options and dynamic call routing based on your campaign's geographic target. Ideal for outbound marketing, appointment setting, and international B2B interactions, these terminations help establish credibility while maximizing performance metrics such as CPA (Cost Per Acquisition) and ROI. Enjoy round-the-clock monitoring and dedicated technical support for every route deployed.
+           We combine advanced telecom technologies, intelligent routing mechanisms, and real-time monitoring to guarantee maximum uptime and performance. Whether your business requires enterprise-level calling, international connectivity, or customer engagement at scale, our CLI solutions are tailored to provide affordable, efficient, and secure voice services. We CloudQlobe are committed to making communication not just reliable but also technologically future-ready, ensuring your business always stays ahead in the global telecom landscape.
           </p>
         </div>
         <div className="flex justify-center items-center w-full p-2">
           <img
-            src="https://img.freepik.com/free-vector/technical-support-customer-service-flat-illustration_1150-51047.jpg"
+            src={Homeimage1}
             alt="CLI Voice Terminations"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[680px] h-[580px] object-cover rounded-lg ml-[180px]"
           />
         </div>
       </section>
 
       {/* DID Solutions Section */}
-      <section className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto">
+      <section className="grid md:grid-cols-2 items-center gap-10 max-w-7xl mx-auto mt-[-80px]">
         <div className="flex justify-center items-center w-full p-2">
           <img
-            src="https://img.freepik.com/free-vector/people-using-different-electronic-devices-such-as-smartphone-laptop-tablet-radio-fields-electromagnetic-pollution_335657-4391.jpg?t=st=1753597790~exp=1753601390~hmac=69c11fa6dd5cd85428c3551e280ab36e48bc1849a84c014db878a23de4fceea2&w=1380"
+            src={Homeimage3}
             alt="DID Solutions"
-            className="w-[480px] h-[420px] object-cover rounded-lg"
+            className="w-[580px] h-[530px] object-cover rounded-lg mt-[-20px] ml-[-100px]"
           />
         </div>
         <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">
-          <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
-            Global <span className="text-orange-500">DID Number Solutions</span>
+          <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-600 mb-4">
+           Flexible DID Numbers <span className="text-blue-600"> with Seamless Integration</span>
           </h2>
           <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify mb-4">
-            Establishing a virtual presence worldwide has never been easier. With our Direct Inward Dialing (DID) number solutions, you gain access to local, national, and toll-free numbers across 100+ countries — instantly. These numbers are indispensable for businesses that require global reach with local appeal, all without investing in physical infrastructure.
+            We Cloud Qlobe provide Direct Inward Dialing (DID) numbers that empower businesses to establish a local presence across the globe without the need for physical offices. Our DID solutions allow clients to purchase virtual numbers from multiple countries and regions, enabling direct inbound calls from customers worldwide. With scalable cloud-based infrastructure, intelligent call routing, and seamless PBX/VoIP integration, our DID services help businesses stay connected anytime, anywhere.
           </p>
           <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify">
-            Perfect for customer service hubs, remote teams, and VoIP PBX deployments, our DIDs support number portability, SIP trunking, and advanced call forwarding. You get complete control via a self-service portal, allowing real-time routing changes, live call reporting, and SIP registration. With CloudQlobe, every number comes with security, scalability, and seamless provisioning baked in.
+           We offer easy integration with CRM, call center software, and custom applications, ensuring businesses can manage customer interactions, analytics, and call tracking efficiently. Our DID solutions are built to be low-cost, flexible, and highly compatible with existing telecom systems—making it simple for clients to expand their reach and handle large volumes of calls effortlessly. With multi-device accessibility, advanced call forwarding, and number portability, CloudQlobe ensures your communication ecosystem is not just reliable but also future-ready and globally connected.
           </p>
         </div>
       </section>
