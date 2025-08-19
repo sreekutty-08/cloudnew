@@ -16,10 +16,10 @@ const Homecontent1 = () => {
           <img
             src={Homeimage16}
             alt="Website Development"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[520px] h-[520px] object-cover rounded-lg mt-[50px] ml-[-120px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px] mt-[-50px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Innovative <span className="text-orange-500">Website Development</span>
           </h2>
@@ -35,7 +35,7 @@ const Homecontent1 = () => {
       {/* VoIP Websites & App Development Section */}
       <section className="grid md:grid-cols-2 items-center gap-10 mb-24 max-w-7xl mx-auto ml-[35px]">
         <div className="flex flex-col justify-center w-full max-w-[850px]">
-          <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
+          <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800  mt-[-100px]">
             Custom <span className="text-orange-500">VoIP Websites & Apps</span>
           </h2>
           <p className="text-[#5f6368] text-[17px] leading-[1.7] tracking-[0.18px] font-normal text-justify mb-4">
@@ -49,7 +49,7 @@ const Homecontent1 = () => {
           <img
             src={Homeimage17}
             alt="VoIP Apps"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[480px] h-[550px] object-cover rounded-lg ml-[180px] mt-[-100px]"
           />
         </div>
       </section>
@@ -60,10 +60,10 @@ const Homecontent1 = () => {
           <img
             src={Homeimage18}
             alt="Billing & Follow Ups"
-            className="w-[480px] h-[420px] object-cover rounded-lg"
+            className="w-[590px] h-[460px] object-cover rounded-lg ml-[-150px] mt-[100px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px] mt-[-50px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Smart <span className="text-orange-500">Billing & Follow-Up Solutions</span>
           </h2>

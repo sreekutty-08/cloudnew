@@ -16,40 +16,56 @@ const Homecontent1 = () => {
           <img
             src={Homeimage41}
             alt="Global DID Solutions"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[480px] h-[530px] object-cover rounded-lg ml-[-150px] mt-[100px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px] mt-[-70px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Unmatched <span className="text-orange-500">Global DID Numbers</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify mb-4">
-            We, CloudQlobe, empower businesses to establish a robust and credible local presence across the globe. Our Direct Inward Dialing (DID) numbers provide instant access to local, national, and toll-free numbers in over 100 countries. With crystal-clear voice quality, unmatched reliability, and cost-effective solutions, our DID numbers ensure your business communicates seamlessly while projecting professionalism and trust in every interaction.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify">
-            Designed for call centers, remote teams, and international businesses, our DIDs support SIP trunking, number portability, advanced call forwarding, and real-time routing. With CloudQlobe, experience effortless scalability, 24/7 monitoring, high-security standards, and dedicated support—helping your brand deliver superior communication experiences to clients worldwide.
-          </p>
+          <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
         </div>
       </section>
 
       {/* Custom DID Integration Section */}
       <section className="grid md:grid-cols-2 items-center gap-10 mb-28 max-w-7xl mx-auto ml-[35px]">
-        <div className="flex flex-col justify-center w-full max-w-[850px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] mt-[-100px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Powerful <span className="text-orange-500">DID Integration & Management</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify mb-4">
-            We, CloudQlobe, provide fully customizable DID integration that connects seamlessly with your existing PBX, CRM, or VoIP platform. Effortlessly manage intelligent call routing, secure call handling, and detailed analytics that drive operational efficiency and enhance client satisfaction. Our platform ensures that businesses of all sizes can streamline communications while maintaining full control over their voice network.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify">
-            Our advanced solutions include real-time reporting, API integration, automated routing, and dynamic number management. CloudQlobe ensures that your operations scale effortlessly, reduce costs, and adapt to evolving business needs, all while delivering exceptional communication reliability and professional client experiences.
-          </p>
+          <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
         </div>
         <div className="flex justify-center items-center w-full p-2">
           <img
             src={Homeimage40}
             alt="DID Integration"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[580px] h-[480px] object-cover rounded-lg ml-[200px]"
           />
         </div>
       </section>
@@ -60,19 +76,27 @@ const Homecontent1 = () => {
           <img
             src={Homeimage42}
             alt="DID Billing & Management"
-            className="w-[480px] h-[420px] object-cover rounded-lg"
+            className="w-[480px] h-[520px] object-cover rounded-lg mt-[40px] ml-[-200px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px] mt-[-100px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Streamlined <span className="text-orange-500">Billing & Call Management</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify mb-4">
-            We, CloudQlobe, deliver automated billing and intelligent call management for all your DID numbers. Track call usage, generate invoices, and handle multi-currency transactions with complete transparency, accuracy, and ease. Our systems reduce operational complexity while giving you full control over your communications budget.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify">
-            With advanced dashboards, automated alerts, and in-depth analytics, CloudQlobe enables businesses to optimize call flows, improve customer engagement, and maximize operational efficiency. Our solutions are secure, scalable, cost-effective, and designed to support global growth—helping businesses deliver exceptional communication experiences while staying competitive in any market.
-          </p>
+          <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
         </div>
       </section>
     </div>

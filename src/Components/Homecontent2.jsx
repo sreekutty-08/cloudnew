@@ -16,7 +16,7 @@ const Homecontent1 = () => {
           <img
             src={Homeimage5}
             alt="CC Routes"
-            className="w-[580px] h-[550px] object-cover rounded-lg"
+            className="w-[580px] h-[550px] object-cover rounded-lg ml-[-140px] mt-[20px]"
           />
         </div>
        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px]">
@@ -40,17 +40,18 @@ const Homecontent1 = () => {
             Hosting That Scales <span className="text-blue-500">with Your Business Needs </span>
           </h2>
           <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify mb-4">
-           At We CloudQlobe, we deliver hosting solutions that are reliable, scalable, and designed to support businesses of all sizes. Our infrastructure is built with advanced technologies, ensuring high uptime, lightning-fast performance, and seamless integration with your applications. Whether you need shared hosting, VPS, or dedicated servers, we provide flexible options with built-in security and advanced monitoring systems.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify">
-           We combine affordability with advanced hosting technologies such as cloud integration, SSD storage, and automated backups to provide a secure and efficient environment. Our 24/7 technical support ensures that businesses receive expert assistance whenever needed. By choosing We CloudQlobe, clients benefit from a hosting partner that makes their websites and applications highly available, compactable, and future-ready at a cost-effective price.
-          </p>
+  At CloudQlobe, we deliver hosting solutions that are reliable, scalable, and tailored to support businesses of all sizes. Our infrastructure is powered by advanced technologies, ensuring maximum uptime, lightning-fast performance, and seamless integration with your applications. Whether you require shared hosting, VPS, or dedicated servers, we offer flexible options with built-in security, advanced monitoring, and resource management to keep your operations running smoothly.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.58] tracking-[0.15px] font-normal text-justify">
+  We combine affordability with enterprise-grade features such as cloud integration, SSD storage, automated backups, and load balancing to create a secure and efficient environment. Our 24/7 technical support team is always available to provide expert guidance, quick resolutions, and proactive monitoring. By choosing CloudQlobe, clients gain a hosting partner committed to making their websites and applications highly available, scalable, and future-ready — all at a cost-effective price with room to grow as their business evolves.
+</p>
+
         </div>
         <div className="flex justify-center items-center w-full p-2">
           <img
             src={Homeimage4}
             alt="CLI Voice Terminations"
-            className="w-[680px] h-[600px] object-cover rounded-lg"
+            className="w-[480px] h-[430px] object-cover rounded-lg ml-[100px]"
           />
         </div>
       </section>
@@ -61,7 +62,7 @@ const Homecontent1 = () => {
           <img
             src={Homeimage6}
             alt="DID Solutions"
-            className="w-[480px] h-[420px] object-cover rounded-lg"
+            className="w-[550px] h-[460px] object-cover rounded-lg ml-[-150px] mt-[30px]"
           />
         </div>
         <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">

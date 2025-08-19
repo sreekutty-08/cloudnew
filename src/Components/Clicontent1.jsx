@@ -16,19 +16,27 @@ const Homecontent1 = () => {
           <img
             src={Homeimage26}
             alt="CLI Voice Routes"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[480px] h-[490px] object-cover rounded-lg mt-[50px] ml-[-100px]"
           />
         </div>
         <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Trusted <span className="text-orange-500">CLI Voice Routes</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify mb-4">
-            CloudQlobe’s CLI Voice Routes are engineered to maintain your brand identity while delivering superior call quality worldwide. By displaying verified and geographically familiar caller IDs, your calls are instantly recognized and trusted, boosting answer rates, engagement, and customer satisfaction. Our infrastructure ensures low latency, minimal call drops, and seamless connectivity across all major global destinations.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify">
-            Fully compliant with international telecommunication standards, CloudQlobe CLI routes provide robust performance, high reliability, and real-time monitoring. Businesses benefit from predictive routing, detailed analytics, and dedicated technical support, allowing campaigns to run efficiently while maximizing ROI, engagement, and operational transparency. With CloudQlobe, your outreach is always professional, secure, and scalable.
-          </p>
+         <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
         </div>
       </section>
 
@@ -38,18 +46,26 @@ const Homecontent1 = () => {
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Seamless <span className="text-orange-500">CLI Integration & Management</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify mb-4">
-            CloudQlobe provides fully customizable CLI integration that connects effortlessly with your CRM, VoIP systems, or business platform. Manage campaigns, track call performance, and optimize agent productivity with intuitive dashboards and real-time analytics. Our solutions simplify complex workflows while maintaining high call quality and operational efficiency.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify">
-            With predictive dialing, automated routing, and API support, businesses can scale operations efficiently without compromising performance. CloudQlobe ensures every CLI route is secure, reliable, and optimized, empowering your team to reach more customers, increase conversions, and achieve measurable results across all campaigns.
-          </p>
+          <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
         </div>
         <div className="flex justify-center items-center w-full p-2">
           <img
             src={Homeimage27}
             alt="CLI Integration"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[480px] h-[490px] object-cover rounded-lg ml-[100px]"
           />
         </div>
       </section>
@@ -60,19 +76,27 @@ const Homecontent1 = () => {
           <img
             src={Homeimage28}
             alt="CLI Billing & Monitoring"
-            className="w-[480px] h-[420px] object-cover rounded-lg"
+            className="w-[700px] h-[400px] object-cover rounded-lg ml-[-40px] mt-[120px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px] mt-[-70px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Advanced <span className="text-orange-500">Billing & Call Monitoring</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify mb-4">
-            CloudQlobe delivers automated billing and advanced monitoring for all your CLI campaigns. Track usage, generate precise invoices, and manage multi-currency transactions with full transparency. Real-time dashboards and detailed reporting allow businesses to optimize call flows, maximize agent efficiency, and maintain complete control over operational costs.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.18px] font-normal text-justify">
-            With secure, scalable, and reliable solutions, CloudQlobe enables businesses to enhance global communication standards, increase campaign efficiency, and ensure every customer interaction is professional and impactful. Grow your outreach confidently with CLI Voice Routes designed for performance, clarity, and success.
-          </p>
+          <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
         </div>
       </section>
     </div>

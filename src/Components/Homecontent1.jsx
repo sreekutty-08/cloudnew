@@ -61,7 +61,7 @@ const Homecontent1 = () => {
           <img
             src={Homeimage3}
             alt="DID Solutions"
-            className="w-[580px] h-[530px] object-cover rounded-lg mt-[-20px] ml-[-100px]"
+            className="w-[520px] h-[530px] object-cover rounded-lg mt-[20px] ml-[-100px]"
           />
         </div>
         <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">

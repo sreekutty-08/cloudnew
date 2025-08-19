@@ -1,5 +1,5 @@
 import React from 'react';
-import Homeimage48 from '../assets/5_communication02.jpg'
+import Homeimage48 from '../assets/6222519.jpg'
 import Homeimage50 from '../assets/6072191.jpg'
 import Homeimage51 from '../assets/3489823.jpg'
 
@@ -16,19 +16,22 @@ const Homecontent1 = () => {
           <img
             src={Homeimage50}
             alt="Our Company"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[580px] h-[450px] object-cover rounded-lg mt-[80px] ml-[-100px]"
           />
         </div>
         <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Who We Are
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify mb-4">
-            We Cloud Qlobe is a globally recognized telecom leader dedicated to connecting businesses, enterprises, and individuals across the world. With years of experience and an unwavering commitment to innovation, we deliver cutting-edge communication solutions that empower organizations to achieve seamless connectivity, operational efficiency, and measurable growth. Our solutions leverage the latest in VoIP, cloud technology, and digital infrastructure, ensuring reliable and crystal-clear communication for every client.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify">
-            Our mission is to redefine the way businesses communicate globally, offering scalable, cost-effective, and technologically advanced solutions. By combining strategic partnerships with dedicated support and advanced analytics, we ensure our clients benefit from unmatched service quality, global reach, and real-time insights that strengthen decision-making and boost overall communication performance.
-          </p>
+         
+<p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify mb-4">
+  Cloud Qlobe is a globally recognized telecom leader dedicated to connecting businesses, enterprises, and individuals worldwide. With years of expertise and a strong commitment to innovation, we provide advanced communication solutions that enable seamless connectivity, operational efficiency, and measurable growth. Leveraging the latest in VoIP, cloud computing, and digital infrastructure, we deliver reliable and crystal-clear communication for every client. From startups to global enterprises, we help organizations embrace digital transformation, enhance collaboration, and stay competitive in a fast-changing digital era.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify">
+  Our mission is to redefine the way businesses communicate globally by offering scalable, cost-effective, and future-ready solutions. Through strategic partnerships, advanced analytics, and 24/7 expert support, we ensure our clients benefit from unmatched service quality, global reach, and real-time insights. Every solution is tailored to align with business goals, empowering organizations to reduce costs, improve customer experience, and drive sustainable growth with confidence in an interconnected world.
+</p>
+
+
         </div>
       </section>
 
@@ -49,7 +52,7 @@ const Homecontent1 = () => {
           <img
             src={Homeimage48}
             alt="Working Atmosphere"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[450px] h-[480px] object-cover rounded-lg ml-[150px]"
           />
         </div>
       </section>
@@ -60,19 +63,21 @@ const Homecontent1 = () => {
           <img
             src={Homeimage51}
             alt="Our Services"
-            className="w-[480px] h-[420px] object-cover rounded-lg"
+            className="w-[580px] h-[460px] object-cover rounded-lg mt-[50px] ml-[-100px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px] mt-[-50px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Our <span className="text-orange-500">Telecom Services</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify mb-4">
-            We Cloud Qlobe offers a comprehensive range of telecom services, including Call Center (CC) Routes, CLI Routes, VoIP Websites, Dialer Solutions, and DID Number Solutions. Our services are engineered to provide seamless connectivity, high-quality voice clarity, scalable solutions, and easy integration with existing systems, enabling businesses to operate efficiently at local and global levels.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify">
-            Each solution is supported by our robust infrastructure, real-time monitoring, and expert technical support, ensuring reliability, security, and performance. Whether it’s optimizing outbound campaigns, establishing a global presence, or deploying advanced communication platforms, We Cloud Qlobe delivers cost-effective, technologically advanced, and client-focused telecom solutions that keep businesses connected anytime, anywhere.
-          </p>
+         <p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify mb-4">
+  Cloud Qlobe offers a comprehensive range of telecom services, including Call Center (CC) Routes, CLI Routes, VoIP Websites, Dialer Solutions, and DID Number Solutions. Our services are engineered to provide seamless connectivity, high-quality voice clarity, and scalable solutions with easy integration into existing systems. By combining reliability with flexibility, we enable businesses to operate efficiently at both local and global levels while ensuring smooth communication across networks.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.8] tracking-[0.15px] font-normal text-justify">
+  Each solution is powered by our robust infrastructure, real-time monitoring, and expert technical support, ensuring security and consistent performance. Whether it’s optimizing outbound campaigns, expanding international presence, or deploying advanced communication platforms, Cloud Qlobe delivers cost-effective and technologically advanced telecom solutions. With a strong focus on client needs, we help businesses stay connected anytime, anywhere with confidence and scalability.
+</p>
+
+
         </div>
       </section>
     </div>

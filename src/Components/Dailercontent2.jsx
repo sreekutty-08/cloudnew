@@ -16,26 +16,34 @@ const Homecontent2 = () => {
           <img
             src={Homeimage35}
             alt="Multi-Channel Dialers"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[580px] h-[480px] object-cover rounded-lg mt-[70px] ml-[-100px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px] mt-[-50px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Intelligent <span className="text-orange-500">Multi-Channel Dialers</span>
           </h2>
           <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
-            CloudQlobe delivers intelligent multi-channel dialer solutions that extend your communication capabilities far beyond traditional voice calls. Seamlessly connect with customers through calls, SMS, email, and automated notifications, all managed from a single, intuitive platform. This ensures your outreach campaigns are faster, smarter, and more effective, driving higher engagement rates, improved lead conversions, and enhanced customer satisfaction.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
-            Our advanced predictive, progressive, and power dialing modes are designed to maximize efficiency while reducing idle time for agents. With AI-powered call scheduling, dynamic routing, and real-time prioritization, CloudQlobe’s dialers allow your team to focus on meaningful conversations, improving both productivity and ROI. Businesses gain the ability to scale operations quickly, connect globally, and ensure every interaction is purposeful and measurable.
-          </p>
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
           
         </div>
       </section>
 
       {/* Advanced Dialer Integration Section */}
       <section className="grid md:grid-cols-2 items-center gap-10 mb-28 max-w-7xl mx-auto ml-[35px]">
-        <div className="flex flex-col justify-center w-full max-w-[850px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] mt-[-50px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Seamless <span className="text-orange-500">Integration & Automation</span>
           </h2>
@@ -51,7 +59,7 @@ const Homecontent2 = () => {
           <img
             src={Homeimage36}
             alt="Dialer Integration"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[490px] h-[490px] object-cover rounded-lg ml-[150px] mt-[20px]"
           />
         </div>
       </section>
@@ -62,19 +70,27 @@ const Homecontent2 = () => {
           <img
             src={Homeimage37}
             alt="Dialer Analytics"
-            className="w-[480px] h-[420px] object-cover rounded-lg"
+            className="w-[500px] h-[540px] object-cover rounded-lg ml-[-150px]"
           />
         </div>
-        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">
+        <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px] mt-[-120px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Data-Driven <span className="text-orange-500">Analytics & Call Performance</span>
           </h2>
           <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
-            CloudQlobe equips businesses with advanced reporting and analytics capabilities to track every call, agent performance, and campaign efficiency in real-time. Actionable insights allow managers to optimize call flows, enhance lead conversion, and make strategic decisions based on measurable data. Comprehensive dashboards provide a complete overview of agent activity, campaign progress, and ROI metrics.
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
-            From detailed call logs to automated performance reports, CloudQlobe ensures that your dialer campaigns operate with precision, transparency, and maximum efficiency. Identify bottlenecks, monitor peak traffic, and adjust strategies instantly, helping businesses stay ahead in competitive markets and consistently deliver high-quality customer experiences.
-          </p>
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
           
         </div>
       </section>

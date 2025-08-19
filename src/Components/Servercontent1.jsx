@@ -17,19 +17,27 @@ const Homecontent1 = () => {
           <img
             src={Homeimage8}
             alt="Cloud Hosting"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[580px] h-[420px] object-cover rounded-lg mt-[150px] ml-[-100px]"
           />
         </div>
         <div className="flex flex-col justify-center w-full max-w-[850px] ml-[25px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Reliable <span className="text-orange-500">Cloud Hosting</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.7] tracking-[0.15px] font-normal text-justify mb-4">
-            Our cloud hosting platform is designed for businesses that demand agility, reliability, and performance at scale. From growing startups to enterprise-level corporations, our hosting infrastructure ensures uninterrupted access with intelligent resource allocation, zero downtime migrations, and multi-region deployment capabilities. 
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.7] tracking-[0.15px] font-normal text-justify">
-            You benefit from automated scaling, advanced caching, and AI-driven monitoring that adapts instantly to traffic spikes, ensuring seamless user experiences. With built-in redundancy, encrypted backups, and 24/7 security layers, our cloud hosting eliminates single points of failure. Whether you’re hosting SaaS applications, e-commerce platforms, or mission-critical workloads, we provide a foundation that is secure, flexible, and future-ready.
-          </p>
+          <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
         </div>
       </section>
 
@@ -39,18 +47,26 @@ const Homecontent1 = () => {
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             Secure <span className="text-orange-500">VPS Hosting</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.7] tracking-[0.15px] font-normal text-justify mb-4">
-            Our Virtual Private Servers (VPS) provide the perfect balance of affordability and power, giving you dedicated resources without the cost of a physical server. Each VPS runs on enterprise-class hardware with SSD/NVMe storage, ensuring ultra-fast read/write speeds and high input/output performance for applications that demand efficiency. 
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.7] tracking-[0.15px] font-normal text-justify">
-            Developers and businesses enjoy full root access, advanced control panels, and customizable server configurations to tailor their environments. Whether you are deploying web applications, managing databases, or hosting multiple websites, VPS hosting empowers you with DDoS protection, advanced firewalls, and instant scalability. This makes it an ideal solution for SaaS providers, digital agencies, and enterprises needing flexibility without compromising on security and uptime.
-          </p>
+          <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
         </div>
         <div className="flex justify-center items-center w-full p-2">
           <img
             src={Homeimage9}
             alt="VPS Hosting"
-            className="w-[480px] h-[400px] object-cover rounded-lg"
+            className="w-[580px] h-[480px] object-cover rounded-lg ml-[200px] mt-[100px]"
           />
         </div>
       </section>
@@ -61,19 +77,27 @@ const Homecontent1 = () => {
           <img
             src={Homeimage7}
             alt="Dedicated Servers"
-            className="w-[480px] h-[420px] object-cover rounded-lg"
+            className="w-[480px] h-[490px] object-cover rounded-lg mt-[40px] ml-[-50px]"
           />
         </div>
         <div className="flex flex-col justify-center w-full max-w-[850px] ml-[20px]">
           <h2 className="text-[28px] font-normal font-[Roboto,Arial,sans-serif] text-gray-800 mb-4">
             High-Performance <span className="text-orange-500">Dedicated Servers</span>
           </h2>
-          <p className="text-[#5f6368] text-[17px] leading-[1.7] tracking-[0.15px] font-normal text-justify mb-4">
-            Dedicated servers are the ultimate choice for businesses that require full control, unmatched speed, and enterprise-grade reliability. With exclusive hardware resources, businesses can run heavy applications, manage large-scale databases, and handle millions of concurrent requests without latency issues. Every server is equipped with advanced CPUs, high memory capacity, and RAID-protected storage for maximum efficiency. 
-          </p>
-          <p className="text-[#5f6368] text-[17px] leading-[1.7] tracking-[0.15px] font-normal text-justify">
-            Alongside raw power, we provide round-the-clock monitoring, proactive threat detection, and customizable configurations so you can optimize your hosting environment exactly the way you need. Whether you’re running enterprise CRMs, streaming services, or handling mission-critical workloads, our dedicated servers ensure your business stays always online, always secure, and always performing at its peak.
-          </p>
+          <p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify mb-4">
+  We, CloudQlobe, provide premium CC Voice Routes engineered for maximum reliability and superior voice clarity. 
+  Designed for high-volume outbound campaigns, customer support centers, and enterprise communication, our routes 
+  minimize call drops, reduce Post Dial Delay (PDD), and maintain crystal-clear connections across global destinations. 
+  Flexible CLI and non-CLI options, multi-layer routing, and connectivity to top-tier carriers ensure exceptional call 
+  performance with unmatched stability.
+</p>
+<p className="text-[#5f6368] text-[17px] leading-[1.9] tracking-[0.18px] font-normal text-justify">
+  With real-time monitoring, automated alerts, and proactive quality checks, CloudQlobe ensures every call is delivered 
+  reliably and without disruption. Our CC Voice Routes empower businesses to maintain seamless global interactions, 
+  enhance customer engagement, and achieve measurable ROI while keeping operations secure, scalable, and cost-efficient. 
+  Whether you're running a growing call center or handling enterprise-grade traffic, our solutions are built to adapt 
+  and scale with your communication needs.
+</p>
         </div>
       </section>
     </div>
